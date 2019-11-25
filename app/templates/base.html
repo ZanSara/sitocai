@@ -21,14 +21,17 @@
 
 </head>
 <body class="mainpage">
+
     {% include "about_modal.html" %}
+    {% if authenticated %}
+        {% include "new_booking_modal.html" %}
+        {% include "find_modal.html" %}
+        {% include "advanced_modal.html" %}
+    {% endif %}
 
     {% include "banner.html" %}
     
-
-
-
-
+    {% include "calendar.html" %}
 
     {% include "footer.html" %}
 </body>

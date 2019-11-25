@@ -17,3 +17,12 @@ def login():
 @app.route('/logout')
 def logout():
     return render_template('base.html', title="Prenotazioni", year="2019", authenticated=False)
+
+
+@app.route('/prenotazioni')
+def prenotazioni():
+    pass
+
+@app.route('/ospiti')
+def ospiti():
+    pass
