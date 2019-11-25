@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }} - CAI Sovico</title>
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/mainStyle.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/calendarStyle.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bannerStyle.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/modalStyle.css') }}" rel="stylesheet">
+    
+    <script src="{{ url_for('static', filename='javascript/jQuery/jquery-1.11.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/modalUtils.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/findUtils.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/ajax.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/validator.js') }}"></script>
+
+</head>
+<body class="mainpage">
+    {% include "about_modal.html" %}
+
+    {% include "banner.html" %}
+    
+
+
+
+
+
+    {% include "footer.html" %}
+</body>
+</html>
