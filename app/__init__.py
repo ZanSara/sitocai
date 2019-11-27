@@ -1,7 +1,11 @@
 from flask import Flask
+from config import Config
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
-# Inits the app and makes it available to all the components
 app = Flask(__name__)
+app.config.from_object(Config)
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
-# Loads the endpoints
-from app import routes
+from app import routes, models

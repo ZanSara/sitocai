@@ -102,10 +102,13 @@
                                 </script>
                                 <input id="nBM-posti" type="text" class="form-control hidden" name="posti" placeholder="Posti Prenotati" readonly="readonly">
                                 <div id="nBM-postiBtn" style="display:hidden; padding-top:2%;" >
-                                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                    {#
+                                        Generate the bed number's widget
+                                    #}
                                     {% for row in range(2) %}
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                         {% for num in range(8) %}
-                                        {% set bed = (row * 8) + num %}
+                                        {% set bed = (row * 8) + num +1 %}
                                             <a href="#" id="btnPosti-{{ bed }}" class="btn btn-default" role="button" 
                                                 onclick="javascript:setPosti( {{ bed }} )">{{ bed }}</a>    
                                         {% endfor %}
