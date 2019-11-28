@@ -52,6 +52,36 @@
                         <col class="emergenza">
                   </colgroup>
                   <tbody>
+                  {% for giorno, prenotazioni in calendario.items() %}
+                        <tr id='{{giorno}}' {% if giorno.day == 1 %} style='border-top: 4px solid black;' {% endif %}>
+                            {# Date cell #}
+                            <td 
+                                {% if giorno.weekday() == 5 %} style='color:blue;' {% endif %}
+                                {% if giorno.weekday() == 6 %} style='color:red;' {% endif %}
+                                {% if giorno.month == 8 and giorno.day == 15 %} style='color:red; text-decoration:underline;' {% endif %}
+                            > {{ giorno.strftime("%d %b").title() }}</td>
+                            
+                            {# Gestore cell #}
+                            <td {% if not prenotazioni.gestore %} 
+                                    class="nogestore">
+                                <div class='gestore-div'>
+                                    Nessuno!
+                                </div> 
+                            </td>
+                            {% else %}
+                                class="P{{prenotazioni.gestore.id}}">
+                                <a id='{{giorno_dell_anno}}-G' onclick='javascript:openNewBookingModal(1, {{prenotazioni.gestore.id}}, 1);' >
+                                    <div class='gestore-div'>
+                                        {{prenotazioni.gestore.nome}} 
+                                    </div>
+                                </a>
+                            </td>
+                            {% endif %}
+                                
+                            </td>
+
+                        </tr>
+                  {% endfor %}
                   <!--?
                     for($d = 0; $d < ($this->LastDay - $this->FirstDay); $d++){
                     

@@ -8,6 +8,7 @@
             <a class="btn btn-warning" data-toggle="modal" data-target="#About_Modal">About</a>
             <a href="{{ url_for('logout')}}" class="btn btn-danger">Logout</a>
         {% else %}
+            <a class="btn btn-warning" data-toggle="modal" data-target="#About_Modal">About</a>
             <a href="{{ url_for('login') }}" class="btn btn-success">Area Riservata</a>
         {% endif %}
         </div> 

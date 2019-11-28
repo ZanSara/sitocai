@@ -1,10 +1,17 @@
 from app import db
 
-class User(db.Model):
+class Prenotazione(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(64), index=True, unique=True)
-    email = db.Column(db.String(120), index=True, unique=True)
-    password_hash = db.Column(db.String(128))
+    nome = db.Column(db.String(500), index=True)
+    telefono = db.Column(db.String(120), index=True)
+    provincia = db.Column(db.String(2))
+    arrivo = db.Column(db.DateTime, nullable=False)
+    durata = db.Column(db.Integer, nullable=False, default=1)
+    posti = db.Column(db.Integer, nullable=False, default=1)
+    responsabile = db.Column(db.String(120), nullable=False)
+    note = db.Column(db.String(1000), nullable=True)
+    gestori = db.Column(db.Boolean, nullable=False)
+    cane = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-        return '<User {}>'.format(self.username)    
+        return '<Prenotazione {}{}>'.format(self.nome, " (gestore)" if self.gestione else "")    
