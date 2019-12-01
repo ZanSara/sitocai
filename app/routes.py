@@ -5,7 +5,7 @@ from flask import render_template, flash, redirect, url_for
 
 from app import app
 from app.models import Utente, Prenotazione
-from app.forms import LoginForm
+from app.forms import LoginForm, ParametriForm
 from flask_login import current_user, login_user, logout_user, login_required
 
 import locale
@@ -43,11 +43,14 @@ def login():
     login_form = LoginForm()
     if login_form.validate_on_submit():
         user = Utente.query.filter_by(username=login_form.username.data).first()
+
         if user is None or not user.check_password(login_form.password.data):
             flash('Nome utente o password errati')
             return redirect(url_for('login'))
+
         login_user(user)
         return redirect('/index')
+
     return render_template('login.html', form=login_form)
 
 
@@ -57,12 +60,33 @@ def logout():
     logout_user()
     return redirect('/index')
 
-@app.route('/prenotazioni')
+
+@app.route('/prenotazioni', methods=["GET", "POST"])
 @login_required
 def prenotazioni():
-    pass
+    anno = datetime.date.today().year
+    parametri_form = ParametriForm()
+    if parametri_form.validate_on_submit():
+        #user = Utente.query.filter_by(username=parametri_form.username.data).first()
 
-@app.route('/ospiti')
+        #if user is None or not user.check_password(parametri_form.password.data):
+        #    flash('Nome utente o password errati')
+        #    return redirect(url_for('login'))
+
+        return render_template('tabella-prenotazioni.html')
+
+    return render_template('tabella-parametri.html', 
+        title="Lista Prenotazioni per Gestore",
+        anno = anno,
+        form = parametri_form)
+
+
+@app.route('/ospiti', methods=["GET", "POST"])
 @login_required
 def ospiti():
-    pass
+    anno = datetime.date.today().year
+    parametri_form = ParametriForm()
+    return render_template('tabella-parametri.html', 
+        title="Lista Ospiti al Rifugio Del Grande - Stagione {}".format(anno),
+        anno = anno,
+        form = parametri_form)
