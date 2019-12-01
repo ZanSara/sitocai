@@ -1,10 +1,12 @@
 # Endpoints
 import datetime
 
-from flask import render_template
+from flask import render_template, flash, redirect, url_for
 
 from app import app
-from app.models import Prenotazione
+from app.models import Utente, Prenotazione
+from app.forms import LoginForm
+from flask_login import current_user, login_user, logout_user, login_required
 
 import locale
 locale.setlocale(locale.LC_ALL, 'it_IT')
@@ -28,25 +30,39 @@ def index():
         }
     for giorno in giorni_gestione}
 
-    return render_template('base.html', title="Prenotazioni", authenticated=False,
-                                year=anno_corrente, oggi=oggi, giorno_dell_anno=giorno_dell_anno,
+    return render_template('base.html', 
+                                title="Prenotazioni",
+                                year=anno_corrente, 
+                                oggi=oggi, 
+                                giorno_dell_anno=giorno_dell_anno,
                                 calendario=calendario)
 
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('base.html', title="Prenotazioni", year="2019", authenticated=True)
+    login_form = LoginForm()
+    if login_form.validate_on_submit():
+        user = Utente.query.filter_by(username=login_form.username.data).first()
+        if user is None or not user.check_password(login_form.password.data):
+            flash('Nome utente o password errati')
+            return redirect(url_for('login'))
+        login_user(user)
+        return redirect('/index')
+    return render_template('login.html', form=login_form)
 
 
-@app.route('/logout')
+@app.route('/logout', methods=['GET'])
+@login_required
 def logout():
-    return render_template('base.html', title="Prenotazioni", year="2019", authenticated=False)
-
+    logout_user()
+    return redirect('/index')
 
 @app.route('/prenotazioni')
+@login_required
 def prenotazioni():
     pass
 
 @app.route('/ospiti')
+@login_required
 def ospiti():
     pass

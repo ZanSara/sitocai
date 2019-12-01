@@ -59,17 +59,19 @@
                                 {% if giorno.weekday() == 5 %} style='color:blue;' {% endif %}
                                 {% if giorno.weekday() == 6 %} style='color:red;' {% endif %}
                                 {% if giorno.month == 8 and giorno.day == 15 %} style='color:red; text-decoration:underline;' {% endif %}
-                            > {{ giorno.strftime("%d %b").title() }}</td>
+                            > 
+                                {{ giorno.strftime("%d %b").title() }}
+                            </td>
                             
                             {# Gestore cell #}
-                            <td {% if not prenotazioni.gestore %} 
-                                    class="nogestore">
+                            {% if not prenotazioni.gestore %} 
+                            <td class="nogestore">
                                 <div class='gestore-div'>
                                     Nessuno!
                                 </div> 
                             </td>
                             {% else %}
-                                class="P{{prenotazioni.gestore.id}}">
+                            <td class="P{{prenotazioni.gestore.id}}">
                                 <a id='{{giorno_dell_anno}}-G' onclick='javascript:openNewBookingModal(1, {{prenotazioni.gestore.id}}, 1);' >
                                     <div class='gestore-div'>
                                         {{prenotazioni.gestore.nome}} 
@@ -77,92 +79,28 @@
                                 </a>
                             </td>
                             {% endif %}
-                                
-                            </td>
 
+                            {# Prenotazioni cells #}
+                            {% set posti_occupati = 0 %}
+                            {% for prenotazione in prenotazioni.clienti %}
+                                {% set posti_occupati = posti_occupati + prenotazione.posti %}
+                                <td class='P{{ prenotazione.id }}' 
+                                    style='background:{{ prenotazione.colore }}; 
+                                        {% if ultima_prenotazione == prenotazione.id %} 
+                                            border: yellow 4px solid; 
+                                        {% endif %}'>
+                                    <a onclick='javascript:openNewBookingModal(1, "{{ prenotazione.id }}", 0);' >
+                                        <div class='booking-div' style="border: red 1px solid;">
+                                            P{{ prenotazione.id }}
+                                        </div>
+                                    </a>
+                                </td>
+                            {% endfor %}
+                            {% for posto_libero in range(16-posti_occupati) %}
+                                <td></td>
+                            {% endfor %}
                         </tr>
                   {% endfor %}
-                  <!--?
-                    for($d = 0; $d < ($this->LastDay - $this->FirstDay); $d++){
-                    
-                        $fulldate = $this->Dates[$d];
-                        
-                        $absday = $fulldate[0];
-                        $day = $fulldate[1];
-                        $monthname = $fulldate[2][0].$fulldate[2][1].$fulldate[2][2]; // fix me
-                        $monthnum = $fulldate[3];
-                        $weekday = $fulldate[4];
-                  
-                        // Building tr
-                        echo("<tr id='".$day."-0".$monthnum."'");
-                            if( $day == 1 ) echo ("style='border-top: 4px solid black;'");
-                            if( $absday == $this->LastDay-1 ) echo ("style='border-bottom: 4px solid #000;'");
-                            if( $this->Today == $absday) echo("id='today' class='border'");
-                        echo(">");
-
-                        // Building Date td
-                        echo("<td ");
-                            if( $weekday == "S" ) echo("style='color:blue;'");
-                            if( $weekday == "D" ) echo("style='color:red;'");
-                            if( $monthname == "Ago" and $day==15 ) echo("style=color:red;text-decoration:underline;");
-                        echo(">");
-                            echo($day." ".$monthname." ".$weekday );//." / ".$absday);
-                        echo("</td>");
-                    
-                    
-                        // Building Gestore td
-                        $gestore = $this->Gestori[$d];
-                        $numGestori = $gestore[0];                        
-                        if ($numGestori == 0){
-                            echo("<td class='nogestore'>Nessuno!</td>");
-
-                        } else {
-                            $idGestore = $gestore[1];
-                            $nomeGestore = $gestore[2];
-                           
-                            echo("<td class='P".$idGestore."' ");
-                            if($numGestori > 1){
-                                echo(" style='border:4px solid red;'");
-                            }
-                            if($idGestore == $this->LastPrenID){
-                                echo(" style='border:4px solid yellow;'");
-                            }
-                            echo(">");
-                            echo("<a id='".$absday."-G' onclick='javascript:openNewBookingModal(1, ".$idGestore.", 1);' ><div class='gestore-div'>");
-                            echo($nomeGestore);
-                            echo("</div></a>");
-                            echo("</td>");
-                        }
-                        
-                        
-                        // Filling the rest of the table
-                        $bookings = $this->Bookings[$d];
-                        
-                        $tot = 0;
-                        foreach($bookings as $cell){
-                            $tot++;
-                            echo("<td class='P".$cell[0]."' style='background:".$cell[1].";");
-                            if($cell[0] == $this->LastPrenID){
-                                echo("border: yellow 4px solid;'>");
-                            }else{
-                                echo("'>");
-                            }
-                            echo("<a onclick='javascript:openNewBookingModal(1, ".$cell[0].", 0);' ><div class='booking-div'>");//<div style='border: red 1px solid;'>");
-                            echo('P'.$cell[0]);
-                            echo("</div></a>");
-                            echo("</td>");
-                        }
-                        for(;$tot<16; $tot++){
-                            echo ("<td></td>");
-                        }
-
-                        // Close tr
-                        echo ("</tr>");       
-                    
-                    }
-                                     
-                  ?-->
-                  
                   </tbody>
                 </table>
               </div>
