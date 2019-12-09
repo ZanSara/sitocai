@@ -1,3 +1,4 @@
+import datetime
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.fields.html5 import DateField
@@ -9,13 +10,6 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Accedi')
 
 class ParametriForm(FlaskForm):
-    inizio = DateField('Inizio', validators=[DataRequired()])
-    fine = DateField('Fine', validators=[DataRequired()])
+    inizio = DateField('Inizio', format='%d-%m-%Y', validators=[DataRequired()])
+    fine = DateField('Fine', format='%d-%m-%Y', validators=[DataRequired()])
     submit = SubmitField('Invia')
-    
-    def validate_on_submit(self):
-        result = super(ParametriForm, self).validate()
-        if self.inizio.data and self.fine.data and (self.inizio.data > self.fine.data):
-            return False
-        else:
-            return result

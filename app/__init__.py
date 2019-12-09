@@ -13,4 +13,8 @@ migrate = Migrate(app, db)
 # Authentication management
 login = LoginManager(app)
 
+# Setup locale
+import locale
+locale.setlocale(locale.LC_ALL, 'it_IT')
+
 from app import routes, models

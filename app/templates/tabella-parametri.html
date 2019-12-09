@@ -46,23 +46,40 @@
         {{ form.csrf_token }}
         <div id="message-alert" class="alert alert-danger" role="alert" style='display:none; padding-left:10%;padding-right:10%;'></div>
 
-        <div class="form-group">
+        <div class="form-group row">
           <label class="col-sm-3 control-label">Data di Inizio</label>
           <div class="col-sm-9" >
-              <input id="inizio" type="text" class="form-control" name="inizio" placeholder="Giorno-Mese-Anno" value="01-06-{{anno}}"
+              <input id="inizio" type="text" class="form-control" name="inizio" placeholder="Giorno-Mese-Anno" 
+              value="01-06-{{anno}}" required autofocus
               data-rule-required="true" data-msg-required="Inserire una data di inizio gestione"
               data-rule-customData="true">
-          </div>
+          </div>     
         </div>
-        <div class="form-group">
+        <div class="form-group row">
           <label class="col-sm-3 control-label">Data di Fine</label>
           <div class="col-sm-9" >
-              <input id="fine" type="text" class="form-control" name="fine" placeholder="Giorno-Mese-Anno" value="30-09-{{anno}}"
+              <input id="fine" type="text" class="form-control" name="fine" placeholder="Giorno-Mese-Anno" 
+              value="30-09-{{anno}}"  required
               data-rule-required="true" data-msg-required="Inserire una data di fine gestione"
               data-rule-customData="true">
           </div>
         </div>
-        <div class="form-group col-sm-3">
+        <div class="form-group row">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="alert alert-danger col-sm-9 pull-right">
+              {% if messages|length > 1 %}
+              <ul>
+                  {% for message in messages %}
+                  <li><p style="color:#e00;">{{ message }}</p></li>
+                  {% endfor %}
+              </ul>
+              {% else %}
+              <p style="color:#e00;">{{ messages[0] }}</p>
+              {% endif %}
+            </div>
+            {% endif %}
+            {% endwith %}
         </div>
         <div class="form-group col-sm-9 pull-right">
           <input class="btn btn-default" type="submit" value="Invia">
