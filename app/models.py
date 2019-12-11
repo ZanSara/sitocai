@@ -1,3 +1,5 @@
+import datetime
+
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 
@@ -28,13 +30,14 @@ class Prenotazione(db.Model):
     nome = db.Column(db.String(500), index=True)
     telefono = db.Column(db.String(120), index=True)
     provincia = db.Column(db.String(2))
-    arrivo = db.Column(db.DateTime, nullable=False)
+    arrivo = db.Column(db.DateTime, nullable=False, 
+                default=datetime.date(datetime.date.today().year, 6, 1))
     durata = db.Column(db.Integer, nullable=False, default=1)
     posti = db.Column(db.Integer, nullable=False, default=1)
-    responsabile = db.Column(db.String(120), nullable=False)
+    responsabile = db.Column(db.String(120), nullable=False, default="Errore!")
     note = db.Column(db.String(1000), nullable=True)
-    is_gestione = db.Column(db.Boolean, nullable=False)
-    cane = db.Column(db.Boolean, nullable=False)
+    is_gestione = db.Column(db.Boolean, nullable=False, default=False)
+    cane = db.Column(db.Boolean, nullable=False, default=False)
 
     def __repr__(self):
         return '<Prenotazione {}{} - {}, {} giorni, {} persone>'.format(
