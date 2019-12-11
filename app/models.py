@@ -33,7 +33,7 @@ class Prenotazione(db.Model):
     posti = db.Column(db.Integer, nullable=False, default=1)
     responsabile = db.Column(db.String(120), nullable=False)
     note = db.Column(db.String(1000), nullable=True)
-    gestori = db.Column(db.Boolean, nullable=False)
+    is_gestione = db.Column(db.Boolean, nullable=False)
     cane = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):

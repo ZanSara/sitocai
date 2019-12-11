@@ -80,7 +80,20 @@ def prenotazioni():
             flash("La data di fine non puo' precedere la data di inizio.".format(anno))
             return redirect('/prenotazioni')
 
-        return render_template('tabella-prenotazioni.html')
+        giorno_dell_anno = (datetime.date.today() - datetime.date(anno, 1, 1)).days
+        inizio_gestione = datetime.date(anno, 6, 1)
+        fine_gestione = datetime.date(anno, 10, 1)
+        giorni_gestione = [inizio_gestione + datetime.timedelta(days=x) 
+                            for x in range((fine_gestione-inizio_gestione).days)]
+        calendario = { giorno : [] for giorno in giorni_gestione}
+        return render_template('tabella-prenotazioni.html',
+            title = "Lista Prenotazioni per Gestore",
+            anno = anno,
+            form = parametri_form,
+            num_prenotazioni = 0,
+            num_gestioni = 0,
+            lista_prenotazioni = [],
+            calendario = calendario)
 
     return render_template('tabella-parametri.html', 
         title = "Lista Prenotazioni per Gestore",
@@ -109,9 +122,15 @@ def ospiti():
             flash("La data di fine non puo' precedere la data di inizio.".format(anno))
             return redirect('/ospiti')
 
-        return render_template('tabella-ospiti.html')
+        return render_template('tabella-ospiti.html', 
+            title = "Lista Ospiti al Rifugio Del Grande - Stagione {}".format(anno),
+            anno = anno,
+            form = parametri_form,
+            num_prenotazioni = 0,
+            num_gestioni = 0,
+            prenotazioni = [])
 
     return render_template('tabella-parametri.html', 
         title = "Lista Ospiti al Rifugio Del Grande - Stagione {}".format(anno),
         anno = anno,
-        form = parametri_form)
+        form = parametri_form,)

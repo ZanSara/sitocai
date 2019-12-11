@@ -1,43 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }} - CAI Sovico</title>
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     
-    <h2><? echo $this->Titolo ?></h2>
+    <script src="{{ url_for('static', filename='javascript/jQuery/jquery-1.11.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/validator.js') }}"></script>
+
+</head>
+<body style="margin:20px;">
+    
+    <h2>{{ title }}</h2>
     <hr>
     
-    <p>Dal <? echo $this->DataInizio ?> al <? echo $this->DataFine ?> ci sono in totale <b><? echo $this->NumClienti ?> prenotazioni</b>.</p>
+    <p>Dal {{ form.inizio.data }} al {{ form.fine.data }} ci sono in totale <b>{{ num_prenotazioni }} prenotazioni</b>.</p>
     
     <div class="noprint">
       <a class="btn btn-default" href="javascript:window.print()">Stampa la pagina</a>
-      <!-- CHANGE ME WHEN DEPLOYING!!! -->
-      <a class="btn btn-default" href="prenotazioni">Cambia Date</a>
-      <a class="btn btn-default" href="<? echo ROOT ?>/calendar/#<? echo date('j-n', strtotime('yesterday')); ?>">Torna Indietro</a>
+      <a class="btn btn-default" href="{{ url_for('prenotazioni') }}">Cambia Date</a>
+      <a class="btn btn-default" href="{{ url_for('index') }}">Torna Indietro</a>
     </div>
 
     <h3>Calendario:</h3>
     <table class="table table-bordered calendario" style='border:1px solid black;'>
         
-<?
-    for($g=0; $g<($this->GiornoFine - $this->GiornoInizio+1); $g++){
-
-        $absdate = DateTime::createFromFormat('z', ($g+$this->GiornoInizio));
-        $day = $absdate->format('d-m');
-                  
-        echo("<tr>");
-        echo("<td class='warning'>".$day."</td>");
-                       
-        // Filling the rest of the table
-        $bookings = $this->TabellaPrenotazioni[$g];
-        $tot = 0;
-        foreach($bookings as $cell){
-            $tot++;
-            echo("<td class='active'>№".$cell."</td>");
-        }
-        for(;$tot<16; $tot++){
-            echo ("<td></td>");
-        }
-        echo ("</tr>");
-    }
-?>
-
-
+      {% for giorno, prenotazioni in calendario.items() %}
+        <tr>
+            <td class="warning">{{ giorno.strftime("%d %b").title() }}</td>
+            {% set posti_occupati = 0 %}
+            {% for prenotazione in prenotazioni %}
+                {% set posti_occupati = posti_occupati + prenotazione.posti %}
+                {% for posto in prenotazione.posti %}
+                <td>N.{{ prenotazione.id }}</td>
+                {% endfor %}
+            {% endfor %}
+            {% for posto_libero in range(16-posti_occupati) %}
+                <td></td>
+            {% endfor %}
+        </tr>
+      {% endfor %}
     </table>
 
     <hr>
@@ -46,9 +52,9 @@
 
     <table class="table table-bordered">
       <tr class="active">
-        <td>№</td>
+        <td>N.</td>
         <td>Nome Cliente</td>
-        <td>№ Telefono</td>
+        <td>Num. Telefono</td>
         <td>Provincia</td>
         <td>Data Arrivo</td>
         <td>Data Partenza</td>
@@ -56,35 +62,27 @@
         <td>Posti Prenotati</td>
         <td>Nome Responsabile</td>
         <td>Note</td>
-      </tr>
+        <td>Cane?</td>
+    </tr>
         
-<?
-     foreach ($this->DatiClienti as $data) {
-
-        $absdate = DateTime::createFromFormat('z', $data['giorno_inizio']);
-        $dayInizio = $absdate->format('d-m');
-
-        $absdate = DateTime::createFromFormat('z', $data['giorno_inizio']+$data['durata']);
-        $dayFine = $absdate->format('d-m');
-
-        echo("
-            <tr>
-              <td>".$data['id']."</td>
-              <td>".$data['nome']."</td>
-              <td>".$data['tel']."</td>
-              <td>".$data['provincia']."</td>
-              <td>".$dayInizio."-".$this->Year."</td>
-              <td>".$dayFine."-".$this->Year."</td>
-              <td>".$data['durata']."</td>
-              <td>".$data['posti']."</td>
-              <td>".$data['responsabile']."</td>
-              <td>".$data['note']."</td>
-            <tr>
-        ");
-    }
-?> 
-        
-    </table>
+    {% for prenotazione in lista_prenotazioni %}
+    <tr>
+        <td>{{ prenotazione.id }}</td>
+        <td>{{ prenotazione.nome }}</td>
+        <td>{{ prenotazione.telefono }}</td>
+        <td>{{ prenotazione.provincia }}</td>
+        <td>{{ prenotazione.arrivo }}</td>
+        <td>{{ prenotazione.arrivo + prenotazione.durata }}</td>
+        <td>{{ prenotazione.durata }}</td>
+        <td>{{ prenotazione.posti }}</td>
+        <td>{{ prenotazione.responsabile }}</td>
+        <td>{{ prenotazione.note }}</td>
+        <td>{{ prenotazione.cane }}</td>
+    <tr>
+    {% endfor %} 
+  </table>
     
-    <a class="btn btn-default" href="<? echo ROOT ?>/calendar/#<? echo date('j-n', strtotime('yesterday')); ?>">Torna Indietro</a>
-    
+  <a class="btn btn-default" href="{{ url_for('index') }}">Torna Indietro</a>
+
+</body>
+</html>

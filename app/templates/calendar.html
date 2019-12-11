@@ -52,7 +52,7 @@
                         <col class="emergenza">
                   </colgroup>
                   <tbody>
-                  {% for giorno, prenotazioni in calendario.items() %}
+                  {% for giorno, dettagli in calendario.items() %}
                         <tr id='{{giorno}}' {% if giorno.day == 1 %} style='border-top: 4px solid black;' {% endif %}>
                             {# Date cell #}
                             <td 
@@ -64,7 +64,7 @@
                             </td>
                             
                             {# Gestore cell #}
-                            {% if not prenotazioni.gestore %} 
+                            {% if not dettagli.gestore %} 
                             <td class="nogestore">
                                 <div class='gestore-div'>
                                     Nessuno!
@@ -74,7 +74,7 @@
                             <td class="P{{prenotazioni.gestore.id}}">
                                 <a id='{{giorno_dell_anno}}-G' onclick='javascript:openNewBookingModal(1, {{prenotazioni.gestore.id}}, 1);' >
                                     <div class='gestore-div'>
-                                        {{prenotazioni.gestore.nome}} 
+                                        {{dettagli.gestore.nome}} 
                                     </div>
                                 </a>
                             </td>
@@ -82,19 +82,21 @@
 
                             {# Prenotazioni cells #}
                             {% set posti_occupati = 0 %}
-                            {% for prenotazione in prenotazioni.clienti %}
+                            {% for prenotazione in dettagli.prenotazioni %}
                                 {% set posti_occupati = posti_occupati + prenotazione.posti %}
-                                <td class='P{{ prenotazione.id }}' 
-                                    style='background:{{ prenotazione.colore }}; 
-                                        {% if ultima_prenotazione == prenotazione.id %} 
-                                            border: yellow 4px solid; 
-                                        {% endif %}'>
-                                    <a onclick='javascript:openNewBookingModal(1, "{{ prenotazione.id }}", 0);' >
-                                        <div class='booking-div' style="border: red 1px solid;">
-                                            P{{ prenotazione.id }}
-                                        </div>
-                                    </a>
-                                </td>
+                                {% for posto in prenotazione.posti %}
+                                    <td class='P{{ prenotazione.id }}' 
+                                        style='background:{{ prenotazione.colore }}; 
+                                            {% if ultima_prenotazione == prenotazione.id %} 
+                                                border: yellow 4px solid; 
+                                            {% endif %}'>
+                                        <a onclick='javascript:openNewBookingModal(1, "{{ prenotazione.id }}", 0);' >
+                                            <div class='booking-div' style="border: red 1px solid;">
+                                                P{{ prenotazione.id }}
+                                            </div>
+                                        </a>
+                                    </td>
+                                {% endfor %}
                             {% endfor %}
                             {% for posto_libero in range(16-posti_occupati) %}
                                 <td></td>
