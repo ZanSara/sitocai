@@ -1,9 +1,11 @@
 import os
-basedir = os.path.abspath(os.path.dirname(__file__))
+from pathlib import Path
+basedir = str((Path(__file__).parent).absolute())
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'incredibly-unguessable'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or "sadcmwljcnqacjnalkjfhwliufhekjsnca"
 
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-        'sqlite:///' + os.path.join(basedir, 'prenotazioni.db')
+    # Set DATABASE_URL to something like DATABASE_URL=mysql://nomeutente:pwdutente@localhost/nomedb
+    with open(basedir+'/sqlalchemy-config', 'r') as file:
+	SQLALCHEMY_DATABASE_URI = file.read().replace('\n', '')
     SQLALCHEMY_TRACK_MODIFICATIONS = False

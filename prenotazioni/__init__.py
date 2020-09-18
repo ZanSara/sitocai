@@ -17,4 +17,4 @@ login = LoginManager(app)
 import locale
 locale.setlocale(locale.LC_ALL, 'it_IT')
 
-from app import routes, models
+from prenotazioni import routes, models
