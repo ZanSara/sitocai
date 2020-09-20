@@ -1,0 +1,32 @@
+﻿MobileWebCam 3.13 (M.te Disgrazia dal Rif. del Grande Camerini SERVIZIO GLACIOLOGICO LOMBARDO) Dynamic Racing 2 4.2.2 ALPS.JB3.MP.V1
+
+Date and time: Wed Sep 16 14:31:31 CEST 2020
+Battery 100% -1,8℃
+Browser access URL: http://192.168.1.140:8080
+
+Pictures: 6    Uploading: 1
+Orientation: 273
+Mode: Semi-Background (full cam features, wakeup)
+Focus: infinity, White Balance: daylight, Color Effect: none, Scene Mode: landscape, Exposure Compensation: 50
+Memory used: 2,68 MB
+Used upload image size: 3264 x 2448 (from 3264 x 2448)
+
+Activity:
+Wed Sep 16 09:30:50 CEST 2020: Picture 1 taken ... uploading now!
+Wed Sep 16 09:31:19 CEST 2020: ok
+Wed Sep 16 10:30:49 CEST 2020: Custom image size scaling: 1.0, 1.0
+Wed Sep 16 10:30:50 CEST 2020: Picture 2 taken ... uploading now!
+Wed Sep 16 10:31:27 CEST 2020: ok
+Wed Sep 16 11:30:48 CEST 2020: Custom image size scaling: 1.0, 1.0
+Wed Sep 16 11:30:50 CEST 2020: Picture 3 taken ... uploading now!
+Wed Sep 16 11:31:21 CEST 2020: ok
+Wed Sep 16 12:30:48 CEST 2020: Custom image size scaling: 1.0, 1.0
+Wed Sep 16 12:30:50 CEST 2020: Picture 4 taken ... uploading now!
+Wed Sep 16 12:31:15 CEST 2020: ok
+Wed Sep 16 13:30:49 CEST 2020: Custom image size scaling: 1.0, 1.0
+Wed Sep 16 13:30:50 CEST 2020: Picture 5 taken ... uploading now!
+Wed Sep 16 13:31:20 CEST 2020: ok
+Wed Sep 16 14:30:49 CEST 2020: Custom image size scaling: 1.0, 1.0
+Wed Sep 16 14:30:50 CEST 2020: Picture 6 taken ... uploading now!
+
+Errors:

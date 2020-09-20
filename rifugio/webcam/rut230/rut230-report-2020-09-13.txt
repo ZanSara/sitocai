@@ -1,0 +1,423 @@
+=============== REPORT RUT230  ==============
+            Generato il 13/Sep/2020
+=============================================
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 00:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2432
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 15 ore, 25 minuti e 49 secondi
+	Temperatura della CPU: 42.3°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1599957904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599953086 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599989482 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599980502 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 01:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2432
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 16 ore, 25 minuti e 49 secondi
+	Temperatura della CPU: 41.3°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1599957904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599953086 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599989482 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599980502 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 02:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2432
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 17 ore, 25 minuti e 49 secondi
+	Temperatura della CPU: 40.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1599957904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599989482 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599980502 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 03:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2432
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 18 ore, 25 minuti e 49 secondi
+	Temperatura della CPU: 40.0°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1599989482 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599980502 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 04:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2432
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 19 ore, 25 minuti e 49 secondi
+	Temperatura della CPU: 39.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1599989482 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599980502 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 05:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2432
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 20 ore, 25 minuti e 50 secondi
+	Temperatura della CPU: 39.2°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1599989482 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599980502 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 06:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2433
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 21 ore, 25 minuti e 50 secondi
+	Temperatura della CPU: 38.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600011082 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599980502 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 07:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2433
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 22 ore, 25 minuti e 50 secondi
+	Temperatura della CPU: 38.6°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600011082 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600012907 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 08:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2434
+	MB in uscita su wwan0: 14123
+	Tempo di accensione: 34 giorni, 23 ore, 25 minuti e 50 secondi
+	Temperatura della CPU: 38.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599989250 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600011082 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600016506 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 09:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2438
+	MB in uscita su wwan0: 14151
+	Tempo di accensione: 35 giorni, 0 ore, 25 minuti e 51 secondi
+	Temperatura della CPU: 39.4°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600023568 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600022095 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600021121 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600011082 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600020107 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 10:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2444
+	MB in uscita su wwan0: 14152
+	Tempo di accensione: 35 giorni, 1 ore, 25 minuti e 50 secondi
+	Temperatura della CPU: 39.6°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600023568 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600022095 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600021121 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600011082 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600023707 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 11:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2450
+	MB in uscita su wwan0: 14152
+	Tempo di accensione: 35 giorni, 2 ore, 25 minuti e 51 secondi
+	Temperatura della CPU: 40.1°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600023568 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600021121 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600011082 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600027307 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 12:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2456
+	MB in uscita su wwan0: 14153
+	Tempo di accensione: 35 giorni, 3 ore, 25 minuti e 51 secondi
+	Temperatura della CPU: 39.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600023568 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600021121 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600032683 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600030907 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 13:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2462
+	MB in uscita su wwan0: 14153
+	Tempo di accensione: 35 giorni, 4 ore, 25 minuti e 51 secondi
+	Temperatura della CPU: 39.8°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600023568 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600037317 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600032683 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600034507 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 14:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2468
+	MB in uscita su wwan0: 14154
+	Tempo di accensione: 35 giorni, 5 ore, 25 minuti e 51 secondi
+	Temperatura della CPU: 39.2°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600023568 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600037317 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600032683 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600038107 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 15:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2475
+	MB in uscita su wwan0: 14154
+	Tempo di accensione: 35 giorni, 6 ore, 25 minuti e 51 secondi
+	Temperatura della CPU: 39.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600037317 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600032683 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600041707 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 16:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2477
+	MB in uscita su wwan0: 14155
+	Tempo di accensione: 35 giorni, 7 ore, 25 minuti e 51 secondi
+	Temperatura della CPU: 38.4°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600037317 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600032683 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600045308 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 17:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2480
+	MB in uscita su wwan0: 14192
+	Tempo di accensione: 35 giorni, 8 ore, 25 minuti e 51 secondi
+	Temperatura della CPU: 39.1°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600037317 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600032683 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600048909 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 18:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2483
+	MB in uscita su wwan0: 14196
+	Tempo di accensione: 35 giorni, 9 ore, 25 minuti e 52 secondi
+	Temperatura della CPU: 38.0°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600054974 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600054284 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600052509 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 19:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2487
+	MB in uscita su wwan0: 14201
+	Tempo di accensione: 35 giorni, 10 ore, 25 minuti e 52 secondi
+	Temperatura della CPU: 38.3°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600058536 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600054284 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600056110 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 20:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2492
+	MB in uscita su wwan0: 14226
+	Tempo di accensione: 35 giorni, 11 ore, 25 minuti e 52 secondi
+	Temperatura della CPU: 42.0°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600062659 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600054284 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600059710 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 21:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2688
+	MB in uscita su wwan0: 14271
+	Tempo di accensione: 35 giorni, 12 ore, 25 minuti e 52 secondi
+	Temperatura della CPU: 41.3°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600062659 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600054284 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600063310 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 22:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2691
+	MB in uscita su wwan0: 14307
+	Tempo di accensione: 35 giorni, 13 ore, 25 minuti e 52 secondi
+	Temperatura della CPU: 41.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600029058 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1600062659 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600054284 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600066911 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  13/Sep/2020
+ alle ore 23:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2692
+	MB in uscita su wwan0: 14313
+	Tempo di accensione: 35 giorni, 14 ore, 25 minuti e 52 secondi
+	Temperatura della CPU: 40.4°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1600044304 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1600062659 04:92:26:7c:e2:31 192.168.1.157 ASUS_Phone 01:04:92:26:7c:e2:31
+         - 1600054284 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1600066911 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+

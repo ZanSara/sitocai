@@ -1,0 +1,30 @@
+﻿MobileWebCam 3.13 (Rifugio M.Del Grande e R. Camerini   m2580slm  Valmalenco  CAI Sovico) SM-G350 4.2.2 JDQ39.G350XXU0ANG4
+
+Date and time: Thu Aug 24 16:33:42 CEST 2017
+Battery 28% 12,3℃
+
+Pictures: 5    Uploading: 1
+Orientation: 271
+Mode: Semi-Background (full cam features, wakeup)
+Focus: infinity, White Balance: auto, Color Effect: none, Scene Mode: landscape, Exposure Compensation: 50
+Memory used: 4,41 MB
+Used upload image size: 2560 x 1920 (from 2560 x 1920)
+
+Activity:
+Thu Aug 24 16:21:43 CEST 2017: Custom image size scaling: 1.0, 1.0
+Thu Aug 24 16:21:45 CEST 2017: Picture 1 taken ... uploading now!
+Thu Aug 24 16:22:10 CEST 2017: Custom image size scaling: 1.0, 1.0
+Thu Aug 24 16:22:12 CEST 2017: Picture 2 taken ... uploading now!
+Thu Aug 24 16:22:40 CEST 2017: ok
+Thu Aug 24 16:23:03 CEST 2017: Custom image size scaling: 1.0, 1.0
+Thu Aug 24 16:23:05 CEST 2017: Picture 3 taken ... uploading now!
+Thu Aug 24 16:23:08 CEST 2017: Custom image size scaling: 1.0, 1.0
+Thu Aug 24 16:23:10 CEST 2017: Picture 4 taken ... uploading now!
+Thu Aug 24 16:23:28 CEST 2017: ok
+Thu Aug 24 16:33:25 CEST 2017: SMS: photo
+Thu Aug 24 16:33:29 CEST 2017: Custom image size scaling: 1.0, 1.0
+Thu Aug 24 16:33:30 CEST 2017: Picture 5 taken ... uploading now!
+
+Errors:
+Thu Aug 24 16:22:12 CEST 2017: Skipping ftp upload - still locked (for 27049)! Network bandwidth too low for picture size?
+Thu Aug 24 16:23:10 CEST 2017: Skipping ftp upload - still locked (for 5121)! Network bandwidth too low for picture size?

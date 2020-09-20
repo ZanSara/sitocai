@@ -1,0 +1,404 @@
+=============== REPORT RUT230  ==============
+            Generato il 07/Sep/2020
+=============================================
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 00:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1946
+	MB in uscita su wwan0: 11777
+	Tempo di accensione: 28 giorni, 15 ore, 25 minuti e 34 secondi
+	Temperatura della CPU: 38.4°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599463029 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599439504 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599470289 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599462116 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 01:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1946
+	MB in uscita su wwan0: 11777
+	Tempo di accensione: 28 giorni, 16 ore, 25 minuti e 34 secondi
+	Temperatura della CPU: 38.2°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599476397 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599439504 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599470289 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599462116 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 02:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1946
+	MB in uscita su wwan0: 11780
+	Tempo di accensione: 28 giorni, 17 ore, 25 minuti e 34 secondi
+	Temperatura della CPU: 37.4°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599476397 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599439504 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599470289 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599462116 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 03:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1946
+	MB in uscita su wwan0: 11780
+	Tempo di accensione: 28 giorni, 18 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 36.8°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599476397 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599470289 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599462116 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 04:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1946
+	MB in uscita su wwan0: 11780
+	Tempo di accensione: 28 giorni, 19 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 36.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599476397 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599470289 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599462116 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 05:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1946
+	MB in uscita su wwan0: 11780
+	Tempo di accensione: 28 giorni, 20 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 36.2°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599476397 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599470289 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599462116 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 06:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1947
+	MB in uscita su wwan0: 11783
+	Tempo di accensione: 28 giorni, 21 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 36.6°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599494268 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599491890 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599462116 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 07:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 1949
+	MB in uscita su wwan0: 11813
+	Tempo di accensione: 28 giorni, 22 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 35.8°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599491890 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599494520 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 08:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1951
+	MB in uscita su wwan0: 11814
+	Tempo di accensione: 28 giorni, 23 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 35.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599491890 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599498120 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 09:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1953
+	MB in uscita su wwan0: 11832
+	Tempo di accensione: 29 giorni, 0 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 39.3°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599505167 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599504581 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599501720 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 10:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1957
+	MB in uscita su wwan0: 11833
+	Tempo di accensione: 29 giorni, 1 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 43.8°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599505167 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599507909 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599505320 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 11:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1962
+	MB in uscita su wwan0: 11833
+	Tempo di accensione: 29 giorni, 2 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 43.6°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599505167 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599512428 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599508921 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 12:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1967
+	MB in uscita su wwan0: 11834
+	Tempo di accensione: 29 giorni, 3 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 43.7°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599505167 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599514266 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599512522 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 13:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1972
+	MB in uscita su wwan0: 11834
+	Tempo di accensione: 29 giorni, 4 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 43.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599505167 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599514266 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599516122 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 14:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1978
+	MB in uscita su wwan0: 11835
+	Tempo di accensione: 29 giorni, 5 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 42.7°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599505167 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599514266 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599519722 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 15:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1983
+	MB in uscita su wwan0: 11835
+	Tempo di accensione: 29 giorni, 6 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 41.4°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599514266 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599523323 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 16:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1985
+	MB in uscita su wwan0: 11835
+	Tempo di accensione: 29 giorni, 7 ore, 25 minuti e 35 secondi
+	Temperatura della CPU: 39.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599514266 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599526923 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 17:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1986
+	MB in uscita su wwan0: 11835
+	Tempo di accensione: 29 giorni, 8 ore, 25 minuti e 36 secondi
+	Temperatura della CPU: 38.8°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599514266 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599530524 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 18:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 1987
+	MB in uscita su wwan0: 11836
+	Tempo di accensione: 29 giorni, 9 ore, 25 minuti e 36 secondi
+	Temperatura della CPU: 39.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599496331 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599535868 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599534124 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 19:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 1996
+	MB in uscita su wwan0: 11937
+	Tempo di accensione: 29 giorni, 10 ore, 25 minuti e 36 secondi
+	Temperatura della CPU: 42.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599535868 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599537725 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 20:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 1998
+	MB in uscita su wwan0: 11938
+	Tempo di accensione: 29 giorni, 11 ore, 25 minuti e 36 secondi
+	Temperatura della CPU: 42.3°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599535868 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599541325 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 21:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 1999
+	MB in uscita su wwan0: 11939
+	Tempo di accensione: 29 giorni, 12 ore, 25 minuti e 36 secondi
+	Temperatura della CPU: 42.0°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599535868 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599544925 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 22:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 2000
+	MB in uscita su wwan0: 11939
+	Tempo di accensione: 29 giorni, 13 ore, 25 minuti e 36 secondi
+	Temperatura della CPU: 41.2°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599551149 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599535868 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599548526 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  07/Sep/2020
+ alle ore 23:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 2001
+	MB in uscita su wwan0: 11943
+	Tempo di accensione: 29 giorni, 14 ore, 25 minuti e 36 secondi
+	Temperatura della CPU: 40.0°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1599552594 c0:ee:fb:f4:4e:e6 192.168.1.155 OnePlus3 01:c0:ee:fb:f4:4e:e6
+         - 1599525904 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1599535868 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1599548526 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+

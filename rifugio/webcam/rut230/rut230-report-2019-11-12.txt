@@ -1,0 +1,317 @@
+=============== REPORT RUT230  ==============
+            Generato il 12/Nov/2019
+=============================================
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 00:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 14 ore, 45 minuti e 21 secondi
+	Temperatura della CPU: 18.2°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 01:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 15 ore, 45 minuti e 21 secondi
+	Temperatura della CPU: 18.1°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 02:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 16 ore, 45 minuti e 22 secondi
+	Temperatura della CPU: 18.1°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 03:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 17 ore, 45 minuti e 22 secondi
+	Temperatura della CPU: 18.0°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 04:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 18 ore, 45 minuti e 22 secondi
+	Temperatura della CPU: 18.0°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 05:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 19 ore, 45 minuti e 22 secondi
+	Temperatura della CPU: 18.0°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 06:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 20 ore, 45 minuti e 22 secondi
+	Temperatura della CPU: 18.0°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 07:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 21 ore, 45 minuti e 22 secondi
+	Temperatura della CPU: 18.0°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 08:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 22 ore, 45 minuti e 22 secondi
+	Temperatura della CPU: 18.0°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 09:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 141 giorni, 23 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.1°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 10:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 0 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.2°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 11:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 1 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.3°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 12:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 2 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.4°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 13:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 3 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.3°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 14:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2618
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 4 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.3°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 15:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 5 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.2°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 16:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 6 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.2°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 17:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 7 ore, 45 minuti e 23 secondi
+	Temperatura della CPU: 18.0°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 18:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 8 ore, 45 minuti e 24 secondi
+	Temperatura della CPU: 18.0°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 19:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 9 ore, 45 minuti e 24 secondi
+	Temperatura della CPU: 17.9°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 20:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 10 ore, 45 minuti e 24 secondi
+	Temperatura della CPU: 17.9°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 21:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 11 ore, 45 minuti e 24 secondi
+	Temperatura della CPU: 17.9°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 22:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 12 ore, 45 minuti e 24 secondi
+	Temperatura della CPU: 17.9°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+
+REPORT ORARIO  -  12/Nov/2019
+ alle ore 23:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 2619
+	MB in uscita su wwan0: 15642
+	Tempo di accensione: 142 giorni, 13 ore, 45 minuti e 24 secondi
+	Temperatura della CPU: 17.9°C
+	IP:     inet 10.49.175.141/30 brd 10.49.175.143 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+
+

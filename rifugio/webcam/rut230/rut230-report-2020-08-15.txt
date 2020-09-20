@@ -1,0 +1,475 @@
+=============== REPORT RUT230  ==============
+            Generato il 15/Aug/2020
+=============================================
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 00:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 506
+	MB in uscita su wwan0: 4867
+	Tempo di accensione: 5 giorni, 15 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 41.1°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597445747 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597468285 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597470056 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597467327 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597474287 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597474900 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+         - 1597456546 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 01:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 506
+	MB in uscita su wwan0: 4867
+	Tempo di accensione: 5 giorni, 16 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 40.1°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597468285 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597470056 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597467327 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597474287 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597474900 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+         - 1597456546 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 02:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 506
+	MB in uscita su wwan0: 4867
+	Tempo di accensione: 5 giorni, 17 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 39.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597468285 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597470056 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597467327 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597474287 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597474900 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+         - 1597456546 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 03:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 506
+	MB in uscita su wwan0: 4867
+	Tempo di accensione: 5 giorni, 18 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 38.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597468285 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597470056 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597467327 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597474287 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597474900 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+         - 1597456546 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 04:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 506
+	MB in uscita su wwan0: 4867
+	Tempo di accensione: 5 giorni, 19 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 38.4°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597468285 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597470056 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597467327 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597474287 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597474900 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 05:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 506
+	MB in uscita su wwan0: 4867
+	Tempo di accensione: 5 giorni, 20 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 38.0°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597468285 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597470056 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597467327 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597474287 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597474900 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 06:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 506
+	MB in uscita su wwan0: 4867
+	Tempo di accensione: 5 giorni, 21 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 37.7°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597468285 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597470056 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597467327 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597474287 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597474900 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 07:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 507
+	MB in uscita su wwan0: 4867
+	Tempo di accensione: 5 giorni, 22 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 37.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597468285 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597470056 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597474287 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597507304 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 08:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 509
+	MB in uscita su wwan0: 4876
+	Tempo di accensione: 5 giorni, 23 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 37.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597513194 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597513587 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 09:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 511
+	MB in uscita su wwan0: 4880
+	Tempo di accensione: 6 giorni, 0 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 38.4°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597517967 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597518016 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597517700 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597513587 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 10:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 519
+	MB in uscita su wwan0: 4892
+	Tempo di accensione: 6 giorni, 1 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 38.5°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597520423 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597519069 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597517967 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597521331 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597518803 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597518105 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 11:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 530
+	MB in uscita su wwan0: 4934
+	Tempo di accensione: 6 giorni, 2 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 40.6°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597523426 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597522769 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597517967 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597524182 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597522838 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597521705 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 12:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 539
+	MB in uscita su wwan0: 4958
+	Tempo di accensione: 6 giorni, 3 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 39.2°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597523426 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597522769 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597517967 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597528629 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597528166 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597525305 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 13:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 546
+	MB in uscita su wwan0: 4970
+	Tempo di accensione: 6 giorni, 4 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 38.2°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597523426 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597529920 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597517967 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597529464 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597528166 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597528905 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 14:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 553
+	MB in uscita su wwan0: 4970
+	Tempo di accensione: 6 giorni, 5 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 38.1°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597523426 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597534592 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597517967 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597529464 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597528166 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597532506 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 15:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 560
+	MB in uscita su wwan0: 4985
+	Tempo di accensione: 6 giorni, 6 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 38.0°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597523426 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597534592 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597529464 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597528166 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597536107 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 16:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 563
+	MB in uscita su wwan0: 4998
+	Tempo di accensione: 6 giorni, 7 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 37.0°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597523426 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597534592 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597540883 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597528166 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597539707 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 17:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 568
+	MB in uscita su wwan0: 5013
+	Tempo di accensione: 6 giorni, 8 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 37.6°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597545027 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597543368 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597546676 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597528166 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597543307 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 18:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 571
+	MB in uscita su wwan0: 5020
+	Tempo di accensione: 6 giorni, 9 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 37.3°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597545027 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597550325 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597550407 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597549858 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597546908 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 19:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -85
+	MB in ingresso su wwan0: 583
+	MB in uscita su wwan0: 5086
+	Tempo di accensione: 6 giorni, 10 ore, 25 minuti e 2 secondi
+	Temperatura della CPU: 40.6°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597545027 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597550325 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597550407 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597549858 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597550508 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 20:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 587
+	MB in uscita su wwan0: 5120
+	Tempo di accensione: 6 giorni, 11 ore, 25 minuti e 2 secondi
+	Temperatura della CPU: 44.6°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597545027 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597550325 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597517688 74:ee:2a:b0:b0:8c 192.168.1.104 * 01:74:ee:2a:b0:b0:8c
+         - 1597554582 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597549858 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597554110 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 21:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 590
+	MB in uscita su wwan0: 5183
+	Tempo di accensione: 6 giorni, 12 ore, 25 minuti e 3 secondi
+	Temperatura della CPU: 44.9°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597545027 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597550325 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597554582 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597549858 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597557710 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 22:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 592
+	MB in uscita su wwan0: 5190
+	Tempo di accensione: 6 giorni, 13 ore, 25 minuti e 2 secondi
+	Temperatura della CPU: 43.3°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597545027 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597561634 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597523233 00:22:fb:65:a3:1a 192.168.1.59 ACERdiPAOLO 01:00:22:fb:65:a3:1a
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597554582 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597549858 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597561310 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+
+REPORT ORARIO  -  15/Aug/2020
+ alle ore 23:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 592
+	MB in uscita su wwan0: 5190
+	Tempo di accensione: 6 giorni, 14 ore, 25 minuti e 2 secondi
+	Temperatura della CPU: 41.7°C
+	IP:     inet 10.51.47.4/30 brd 10.51.47.7 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1597545027 a8:7d:12:0a:eb:c2 192.168.1.128 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+         - 1597561634 a2:81:40:ea:2a:53 192.168.1.190 A40-Bruna 01:a2:81:40:ea:2a:53
+         - 1597538705 e8:d4:e0:8f:4e:95 192.168.1.140 android-cfa036d99331d0e5 *
+         - 1597554582 be:c6:68:1a:f0:e4 192.168.1.174 Galaxy-A51 01:be:c6:68:1a:f0:e4
+         - 1597549858 d8:5b:2a:c6:3f:2b 192.168.1.73 Galaxy-A5-Paolo 01:d8:5b:2a:c6:3f:2b
+         - 1597561310 b4:3a:28:65:d4:e1 192.168.1.122 android-8e518838bc74a2a3 01:b4:3a:28:65:d4:e1
+
+

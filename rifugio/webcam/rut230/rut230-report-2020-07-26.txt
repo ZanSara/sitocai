@@ -1,0 +1,384 @@
+=============== REPORT RUT230  ==============
+            Generato il 26/Jul/2020
+=============================================
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 00:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3190
+	MB in uscita su wwan0: 17165
+	Tempo di accensione: 398 giorni, 13 ore, 55 minuti e 9 secondi
+	Temperatura della CPU: 41.1°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595745195 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595738813 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 01:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3190
+	MB in uscita su wwan0: 17165
+	Tempo di accensione: 398 giorni, 14 ore, 55 minuti e 9 secondi
+	Temperatura della CPU: 39.8°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595745195 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595760415 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 02:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3190
+	MB in uscita su wwan0: 17165
+	Tempo di accensione: 398 giorni, 15 ore, 55 minuti e 10 secondi
+	Temperatura della CPU: 38.9°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595745195 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595760415 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 03:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3190
+	MB in uscita su wwan0: 17166
+	Tempo di accensione: 398 giorni, 16 ore, 55 minuti e 10 secondi
+	Temperatura della CPU: 38.2°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595745195 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595760415 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 04:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3190
+	MB in uscita su wwan0: 17166
+	Tempo di accensione: 398 giorni, 17 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 37.6°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595745195 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595760415 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 05:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3190
+	MB in uscita su wwan0: 17166
+	Tempo di accensione: 398 giorni, 18 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 37.1°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595745195 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595760415 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 06:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3190
+	MB in uscita su wwan0: 17166
+	Tempo di accensione: 398 giorni, 19 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 36.8°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595745195 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595760415 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 07:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3190
+	MB in uscita su wwan0: 17166
+	Tempo di accensione: 398 giorni, 20 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 36.5°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595782016 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 08:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3192
+	MB in uscita su wwan0: 17175
+	Tempo di accensione: 398 giorni, 21 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 36.1°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595744221 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595784224 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 09:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3192
+	MB in uscita su wwan0: 17176
+	Tempo di accensione: 398 giorni, 22 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 36.1°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595784224 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 10:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 3192
+	MB in uscita su wwan0: 17179
+	Tempo di accensione: 398 giorni, 23 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 36.0°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595784224 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 11:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3193
+	MB in uscita su wwan0: 17182
+	Tempo di accensione: 399 giorni, 0 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 36.1°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595784224 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 12:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3193
+	MB in uscita su wwan0: 17183
+	Tempo di accensione: 399 giorni, 1 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 35.8°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595784224 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 13:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -87
+	MB in ingresso su wwan0: 3194
+	MB in uscita su wwan0: 17184
+	Tempo di accensione: 399 giorni, 2 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 36.0°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595784224 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 14:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3195
+	MB in uscita su wwan0: 17218
+	Tempo di accensione: 399 giorni, 3 ore, 55 minuti e 11 secondi
+	Temperatura della CPU: 35.7°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595805827 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 15:01:01
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3196
+	MB in uscita su wwan0: 17224
+	Tempo di accensione: 399 giorni, 4 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 36.1°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595805827 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 16:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3196
+	MB in uscita su wwan0: 17224
+	Tempo di accensione: 399 giorni, 5 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 37.2°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595805827 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 17:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3196
+	MB in uscita su wwan0: 17224
+	Tempo di accensione: 399 giorni, 6 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 38.4°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595787454 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595805827 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 18:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 3196
+	MB in uscita su wwan0: 17233
+	Tempo di accensione: 399 giorni, 7 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 38.3°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595820479 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595782574 74:ee:2a:b0:b0:8c 192.168.1.154 * 01:74:ee:2a:b0:b0:8c
+         - 1595805827 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 19:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3279
+	MB in uscita su wwan0: 17317
+	Tempo di accensione: 399 giorni, 8 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 40.0°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595823644 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595805827 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 20:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3581
+	MB in uscita su wwan0: 17428
+	Tempo di accensione: 399 giorni, 9 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 41.5°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595828470 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595827428 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 21:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3582
+	MB in uscita su wwan0: 17435
+	Tempo di accensione: 399 giorni, 10 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 41.1°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595828470 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595827428 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 22:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -91
+	MB in ingresso su wwan0: 3583
+	MB in uscita su wwan0: 17438
+	Tempo di accensione: 399 giorni, 11 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 43.4°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595828470 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595827428 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
+REPORT ORARIO  -  26/Jul/2020
+ alle ore 23:01:00
+	Tipo di connessione: HSDPA+HSUPA
+	Operatore: I TIM
+	Livello del segnale (dBm): -89
+	MB in ingresso su wwan0: 3583
+	MB in uscita su wwan0: 17439
+	Tempo di accensione: 399 giorni, 12 ore, 55 minuti e 12 secondi
+	Temperatura della CPU: 41.5°C
+	IP:     inet 10.66.161.122/30 brd 10.66.161.123 scope global wwan0
+	Dispositivi connessi alla rete Wifi:
+         - 1595838438 f8:27:93:4d:94:88 192.168.1.217 iPhone-di-Alice 01:f8:27:93:4d:94:88
+         - 1595827428 a8:7d:12:0a:eb:c2 192.168.1.178 HUAWEI_MediaPad_T5-9896df 01:a8:7d:12:0a:eb:c2
+
+
