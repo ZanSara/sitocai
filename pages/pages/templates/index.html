@@ -1,28 +1,75 @@
 <html>
 <head>
 
+<meta http-equiv="title" content="CAI Sovico">
+<meta http-equiv="content-type"><title>Home CAI Sovico</title>
+<meta name="description" content="CaiSovico.it il sito della Sezione di SOVICO del Club Alpino Italiano e del Rifugio Mario del Grande e Remo Camerini">
+<meta name="keywords" content="www.caisovico.it, caisovico.it, caisovico, Sovico, Rifugio, Rif., M.del Grande, R.Camerini, Altavia, Chiareggio, Val Malenco, Valmalenco, M.Disgrazia, escursioni, gite">
+<meta name="keyphrase" content="www.cai sovico.it, cai sovico, cai di Sovico, comune di sovico, Sezione di SOVICO, Club Alpino Italiano Sezione di SOVICO, Rifugio M.del Grande R.Camerini, Rifugio Mario del Grande e Remo Camerini, Rif.del Grande Camerini, Alta via, Alta via dell Valmalenco, Altavia della Valmalenco, 3 Tappa Altavia della Valmalenco, Monte Disgrazia, Cima di Vazzeda, Alpe Sissone,"> 
+<meta name="author" content="Paolo Zanzottera">
+<meta name="identifier" content="http://caisovico.it">
+<meta name="expires" content="never">
+<meta name="Rating" content="General">
+<meta name="distribution" content="global">
+<meta name="language" content="Italian">
+<meta name="robots" content="index,follow">
+<meta name="resource-type" content="document">
+<meta name="summary" content="CaiSovico.it il sito della Sezione di SOVICO del Club Alpino Italiano e del Rifugio Mario del Grande e Remo Camerini">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="text/html; charset=ISO-8859-1">
+<link rel="icon" href="/static/images/favicon.gif" type="image/gif"/> 
+
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
 
+<script>
+function toggleMenu(){
+  var nav = document.getElementById("sidenav");
+  var menu = document.getElementById("menu");
+  var footer = document.getElementById("footer");
 
+  if (!menu.style.display || menu.style.display === "none"){
+    // Expand
+    nav.style.height = "100vh";
+    nav.style.textAlign = "center";
+    menu.style.display = "block";
+    menu.style.width = "100%";
+    menu.style.margin = "0";
+    menu.style.padding = "0";
+    footer.style.display = "block";
+    document.body.style.overflowY = "hidden";
+  } else {
+    // Collapse
+    nav.style.height = "var(--navbar-height)";
+    menu.style.display = "none";
+    footer.style.display = "none";
+    document.body.style.overflowY = "auto";
+  }
+}
+</script>
 
 </head>
 <body>
 <div class="container">
 
 <!-- Side navigation -->
-<div class="sidenav">
+<div id="sidenav">
   <div class="title">
     <img src="/static/images/logo-cai-trasparente.png">
-    <h1>CAI Sovico</h1>
+    <h1>Club Alpino Italiano</h1>
+    <h1>Sezione di Sovico</h1>
+    <h1 class="mobile-only">CAI Sovico</h1>
+    <img class="mobile-only" src="/static/images/hamburger-icon.png" onclick="javascript:toggleMenu();"/>
   </div>
-  <div class="menu">
+  <div id="menu">
     <a href="#">Rifugio</a>
     <a href="#">Sezione</a>
     <a href="#">Programmi</a>
     <a href="#">Bacheca</a>
   </div>
-  <div class="footer">
+  <div id="footer">
     <p>Club Alpino Italiano</p>
     <p>Sezione di SOVICO</p>
     <p><a href="#">English</a></p>
