@@ -8,12 +8,53 @@ from pages.forms import LoginForm
 from flask_login import current_user, login_user, logout_user, login_required
 
 
-
 @app.route('/')
-@app.route('/index')
-@app.route('/index.html') # Backward compatibility
+@app.route('/index.html')
 def index():
     return render_template('index.html')
+
+
+@app.route('/rifugio')
+@app.route('/rifugio/rifugio.html')
+def rifugio():
+    return render_template('rifugio.html')
+
+@app.route('/rifugio/percorsi')
+@app.route('/rifugio/rifugio-percorsi/rifugio-percorsi.html')
+def rifugio_percorsi():
+    return render_template('rifugio-percorsi.html')
+
+@app.route('/rifugio/webcams')
+@app.route('/rifugio/webcam/webcam.html')
+def rifugio_webcams():
+    return render_template('rifugio-webcams.html')
+
+@app.route('/rifugio/storia')
+@app.route('/rifugio/rifugio-storia/rifugio-storia.html')
+def rifugio_storia():
+    return render_template('rifugio-storia.html')
+
+@app.route('/rifugio/foto')
+@app.route('/rifugio/rifugio-lavori/rifugio-lavori.html')
+def rifugio_foto():
+    return render_template('rifugio-foto.html')
+
+
+@app.route('/sezione')
+@app.route('/sezione/sezione.html') # Backward compatibility
+def sezione():
+    return render_template('sezione.html')
+
+@app.route('/programmi')
+@app.route('/programmi/programmi.html') # Backward compatibility
+def programmi():
+    return render_template('programmi.html')
+
+@app.route('/bacheca')
+@app.route('/bacheca/bacheca.html') # Backward compatibility
+def bacheca():
+    return render_template('bacheca.html')
+
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -27,7 +68,7 @@ def login():
         #    return redirect(url_for('login'))
 
         login_user(user)
-        return redirect('/index')
+        return redirect('/')
 
     return render_template('login.html', form=login_form)
 
@@ -39,78 +80,26 @@ def logout():
     return redirect('/index')
 
 
-@app.route('/prenotazioni', methods=["GET", "POST"])
-@login_required
-def prenotazioni():
-    anno = datetime.date.today().year
-    parametri_form = ParametriForm()
-    if parametri_form.validate_on_submit():
-
-        # Validazione date
-        if parametri_form.inizio.data and parametri_form.inizio.data < datetime.date(anno, 6, 1):
-            flash("La data di inizio non puo' precedere la data di inizio stagione (01-06-{}).".format(anno))
-            return redirect('/prenotazioni')
-
-        if parametri_form.fine.data and parametri_form.fine.data > datetime.date(anno, 9, 30):
-            flash("La data di fine non puo' seguire la data di fine stagione (30-09-{}).".format(anno))
-            return redirect('/prenotazioni')
-
-        if parametri_form.inizio.data and parametri_form.fine.data \
-            and parametri_form.inizio.data > parametri_form.fine.data:
-            flash("La data di fine non puo' precedere la data di inizio.".format(anno))
-            return redirect('/prenotazioni')
-
-        giorno_dell_anno = (datetime.date.today() - datetime.date(anno, 1, 1)).days
-        inizio_gestione = datetime.date(anno, 6, 1)
-        fine_gestione = datetime.date(anno, 10, 1)
-        giorni_gestione = [inizio_gestione + datetime.timedelta(days=x) 
-                            for x in range((fine_gestione-inizio_gestione).days)]
-        calendario = { giorno : [] for giorno in giorni_gestione}
-        return render_template('tabella-prenotazioni.html',
-            title = "Lista Prenotazioni per Gestore",
-            anno = anno,
-            form = parametri_form,
-            num_prenotazioni = 0,
-            num_gestioni = 0,
-            lista_prenotazioni = [],
-            calendario = calendario)
-
-    return render_template('tabella-parametri.html', 
-        title = "Lista Prenotazioni per Gestore",
-        anno = anno,
-        form = parametri_form)
 
 
-@app.route('/ospiti', methods=["GET", "POST"])
-@login_required
-def ospiti():
-    anno = datetime.date.today().year
-    parametri_form = ParametriForm()
-    if parametri_form.validate_on_submit():
 
-        # Validazione date
-        if parametri_form.inizio.data and parametri_form.inizio.data < datetime.date(anno, 6, 1):
-            flash("La data di inizio non puo' precedere la data di inizio stagione (01-06-{}).".format(anno))
-            return redirect('/ospiti')
 
-        if parametri_form.fine.data and parametri_form.fine.data > datetime.date(anno, 9, 30):
-            flash("La data di fine non puo' seguire la data di fine stagione (30-09-{}).".format(anno))
-            return redirect('/ospiti')
+@app.errorhandler(401) 
+def unauthorized(e):
+  return render_template("401.html") 
 
-        if parametri_form.inizio.data and parametri_form.fine.data \
-            and parametri_form.inizio.data > parametri_form.fine.data:
-            flash("La data di fine non puo' precedere la data di inizio.".format(anno))
-            return redirect('/ospiti')
+@app.errorhandler(403) 
+def forbidden(e):
+  return render_template("403.html") 
 
-        return render_template('tabella-ospiti.html', 
-            title = "Lista Ospiti al Rifugio Del Grande - Stagione {}".format(anno),
-            anno = anno,
-            form = parametri_form,
-            num_prenotazioni = 0,
-            num_gestioni = 0,
-            prenotazioni = [])
+@app.errorhandler(404) 
+def not_found(e):
+  return render_template("404.html") 
 
-    return render_template('tabella-parametri.html', 
-        title = "Lista Ospiti al Rifugio Del Grande - Stagione {}".format(anno),
-        anno = anno,
-        form = parametri_form,)
+@app.errorhandler(405) 
+def method_not_allowed(e):
+  return render_template("405.html")
+
+@app.errorhandler(500) 
+def internal_error(e):
+  return render_template("500.html") 

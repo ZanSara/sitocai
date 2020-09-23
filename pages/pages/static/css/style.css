@@ -1,6 +1,7 @@
 :root {
   --sidebar-width: 300px;
   --navbar-height: 70px;
+  --background-color:  #eeeeee; /*#ddeeff*/;
 }
 
 * {
@@ -9,14 +10,48 @@
   border: none;
 }
 
+html {
+  margin-top:12vh;
+}
+
 body {
+  background-color:  var(--background-color);
+}
+
+.mountains {
+  z-index: 10;
+  position: fixed;
+  top:0;
+  right:-1000px;
+  left:-1000px;
+  height: 12vh;
+  overflow: hidden;
+}
+
+.mountains img{
+  height: 12vh;
+  margin-right: -5px;;
+}
+
+.mountains .background {
+  z-index: -1;
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  height: 12vh;
   background-color: #ddeeff;
 }
 
-.container {
+#container {
   max-width: 1300px;
   margin: auto;
   font-family: 'Raleway', sans-serif; 
+}
+
+hr {
+  margin: 20px;
+  border: 1px solid black;
 }
 
 .mobile-only {
@@ -35,7 +70,7 @@ body {
   overflow-x: hidden; /* Disable horizontal scroll */
   text-align: right;
 
-  background-color: #ddeeff;
+  background-color: var(--background-color);
 }
 
 #sidenav .title {
@@ -44,7 +79,7 @@ body {
 }
 
 #sidenav .title h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -71,13 +106,16 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-/* The navigation menu links */
+#menu h2,
 #menu a {
-  padding: 15px;
   text-decoration: none;
   font-size: 30px;
   color: black;
   display: block;
+}
+
+#menu a {
+  padding: 10px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -107,28 +145,42 @@ body {
 }
 
 /* Style page content */
-.main {
+#main {
   background-color: #ffffff;
   min-height: 90vh;
   margin-left: var(--sidebar-width);
   padding: 5vh;
 }
 
-.main h1 {
+#main h1 {
   font-weight: 500;
   font-size: 50px;
   margin-bottom: 2rem;
 }
 
-.main p {
+#main p {
   font-size: 20px;
   margin-bottom: 1rem;
   line-height: 2rem;
 }
 
-.main img {
+#main img {
   width: 90%;
   padding: 5%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30%;
+}
+
+.highlight {
+  margin: 3%;
+  padding: 5%;
+  background-color: #ffeeaa;
 }
 
 
@@ -177,7 +229,7 @@ body {
     margin-right: 1%;
   }
   
-  .main {
+  #main {
     margin-top: 60px;
     margin-left: 0;
   }
