@@ -1,7 +1,8 @@
 :root {
   --sidebar-width: 300px;
   --navbar-height: 70px;
-  --background-color:  #eeeeee; /*#ddeeff*/;
+  --background-color:  white; /*#ddeeff*/;
+  --main-radius: 20px;
 }
 
 * {
@@ -10,17 +11,30 @@
   border: none;
 }
 
+body {
+  background-color: #dddddd;
+}
+
+/*
+body {
+  background-attachment: fixed;
+  background-image: url("/static/images/background-alpe-vazzeda.jpg");
+}
+
+
 html {
   margin-top:12vh;
 }
 
 body {
-  background-color:  var(--background-color);
-}
+  background-image: url("/static/images/background-alpe-vazzeda.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
 
 .mountains {
   z-index: 10;
-  position: fixed;
+  position: absolute;
   top:0;
   right:-1000px;
   left:-1000px;
@@ -39,14 +53,15 @@ body {
   top:0;
   right:0;
   left:0;
-  height: 12vh;
+  height: 7vh;
   background-color: #ddeeff;
 }
 
 #container {
   max-width: 1300px;
   margin: auto;
-  font-family: 'Raleway', sans-serif; 
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 hr {
@@ -69,8 +84,7 @@ hr {
   /*left: 0; /* Stay to the left */
   overflow-x: hidden; /* Disable horizontal scroll */
   text-align: right;
-
-  background-color: var(--background-color);
+  background-color: white;
 }
 
 #sidenav .title {
@@ -146,13 +160,15 @@ hr {
 
 /* Style page content */
 #main {
-  background-color: #ffffff;
   min-height: 90vh;
   margin-left: var(--sidebar-width);
   padding: 5vh;
+  background-color: white;
 }
 
 #main h1 {
+  width: 100%;
+  text-align:center;
   font-weight: 500;
   font-size: 50px;
   margin-bottom: 2rem;
@@ -181,6 +197,54 @@ hr {
   margin: 3%;
   padding: 5%;
   background-color: #ffeeaa;
+}
+
+#bacheca {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+#bacheca h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#bacheca .box{
+  margin:10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;  /* to transition smoothly on mouse out */
+}
+
+#bacheca .box:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out;
+}
+
+#bacheca .manifesto .testo {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  margin-top: -30%;
+  padding:20px 25px;
+}
+
+#bacheca .manifesto img {
+  margin:0;
+  padding: 0;
+  width:100%;
+}
+
+#bacheca div.postit {
+  font-weight: 500;
+  font-style: italic;
+  margin:10px;
+  padding:20px 25px;
+  border-radius: 4px;
+  background-color: #ffeebb;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 
