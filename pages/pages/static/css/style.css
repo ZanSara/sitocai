@@ -15,58 +15,19 @@ body {
   background-color: #dddddd;
 }
 
-/*
-body {
-  background-attachment: fixed;
-  background-image: url("/static/images/background-alpe-vazzeda.jpg");
-}
-
-
-html {
-  margin-top:12vh;
-}
 
 body {
-  background-image: url("/static/images/background-alpe-vazzeda.jpg");
-  background-repeat: no-repeat;
   background-attachment: fixed;
-} */
-
-.mountains {
-  z-index: 10;
-  position: absolute;
-  top:0;
-  right:-1000px;
-  left:-1000px;
-  height: 12vh;
-  overflow: hidden;
+  background-size: cover;
+  background-image: url("/static/images/panoramica-da-sopra-grigia.jpeg");
 }
 
-.mountains img{
-  height: 12vh;
-  margin-right: -5px;;
-}
-
-.mountains .background {
-  z-index: -1;
-  position: fixed;
-  top:0;
-  right:0;
-  left:0;
-  height: 7vh;
-  background-color: #ddeeff;
-}
 
 #container {
   max-width: 1300px;
   margin: auto;
   font-family: 'Raleway', sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-hr {
-  margin: 20px;
-  border: 1px solid black;
 }
 
 .mobile-only {
@@ -120,16 +81,24 @@ hr {
   font-family: 'Raleway', sans-serif;
 }
 
-#menu h2,
-#menu a {
+#menu a.principale {
   text-decoration: none;
   font-size: 30px;
   color: black;
   display: block;
+  padding: 10px;
 }
 
-#menu a {
-  padding: 10px;
+#menu a.secondario {
+  text-decoration: none;
+  font-size: 20px;
+  color: #333333;
+  display: block;
+  padding: 5px;
+}
+
+#menu a.selected{
+  font-weight: 700;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -158,6 +127,8 @@ hr {
   margin-bottom: 20px;
 }
 
+
+
 /* Style page content */
 #main {
   min-height: 90vh;
@@ -171,7 +142,27 @@ hr {
   text-align:center;
   font-weight: 500;
   font-size: 50px;
+  margin-bottom: 3rem;
+}
+
+#main h2 {
+  width: 100%;
+  text-align:center;
+  font-weight: 500;
+  font-size: 30px;
   margin-bottom: 2rem;
+}
+
+#main h5 {
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  margin: 3rem 0 2rem 0;
+}
+
+hr {
+  margin: 2rem;
+  border: 1px solid #cccccc;
 }
 
 #main p {
@@ -181,22 +172,62 @@ hr {
 }
 
 #main img {
-  width: 90%;
-  padding: 5%;
+  width: 100%;
+  margin: 2rem 0;
 }
 
-.center {
+#main .due-colonne{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+#main table{
+  max-width: 90vw;
+}
+
+#main td{
+  font-size: 20px;
+  line-height: 2rem;
+  padding-right: 1rem;
+}
+
+
+#main .annuncio {
+  padding: 2rem;
+  background-color: #fbf8d4;
+  border-radius: 5px;
+  border: 1px solid #e0ddbd;
+  box-shadow: 0 0 10px 0 rgba(100, 50, 0, 0.3);
+  margin-bottom: 5%;
+}
+
+#main .annuncio p {
+  font-size: 25px;
+}
+
+#main .annuncio h2 {
+  font-size: 30px;
+}
+
+.http-error {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("/static/images/disegno-rifugio.png");
+
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 30%;
-}
+  height: 80%;
 
-.highlight {
-  margin: 3%;
-  padding: 5%;
-  background-color: #ffeeaa;
+  margin: 5vh -5vh;
+}
+.http-error div { 
+  padding: 1rem; 
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 #bacheca {
@@ -297,4 +328,17 @@ hr {
     margin-top: 60px;
     margin-left: 0;
   }
+
+  .http-error {
+    background: none;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+  }
+  .http-error div { 
+    box-shadow: none;
+  }
+  
 } 

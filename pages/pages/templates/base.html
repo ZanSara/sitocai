@@ -27,16 +27,6 @@
 </head>
 <body>
 
-<!--div class="mountains">
-  <div class="background"></div>
-  <img src="/static/images/mountains.svg"/>
-  <img src="/static/images/mountains.svg"/>
-  <img src="/static/images/mountains.svg"/>
-  <img src="/static/images/mountains.svg"/>
-  <img src="/static/images/mountains.svg"/>
-  <img src="/static/images/mountains.svg"/>
-</div-->
-
 <div id="container">
 
   <!-- Side navigation -->
@@ -49,17 +39,34 @@
       <img class="mobile-only" src="/static/images/hamburger-icon.png" onclick="javascript:toggleMenu();"/>
     </div>
     <div id="menu">
-      {% block menu%}
-      {% endblock %}
+
+      {% if not selected %} {%set selected = ""%} {% endif %}
+      <a href="/" class="principale {%if selected=="home"%}selected{%endif%}">Home</a>
+      <a href="/rifugio" class="principale {%if selected=="rifugio"%}selected{%endif%}">Rifugio</a>
+      
+      {% if selected.startswith("rifugio") %}
+      <a href="/rifugio/percorsi" class="secondario {%if selected=="rifugio_percorsi"%}selected{%endif%}">Sentieri</a>
+      <a href="/rifugio/webcam" class="secondario {%if selected=="rifugio_webcam"%}selected{%endif%}">Webcam e Meteo</a>
+      <a href="/rifugio/storia" class="secondario {%if selected=="rifugio_storia"%}selected{%endif%}">Storia</a>
+      <a href="/rifugio/foto" class="secondario {%if selected=="rifugio_webcam"%}selected{%endif%}">Foto</a>
+      {% endif %}
+
+      <a href="/sezione" class="principale {%if selected=="sezione"%}selected{%endif%}">Sezione</a>
+
+      {% if selected.startswith("sezione") %}
+      <a href="/programmi" class="secondario {%if selected=="programmi"%}selected{%endif%}">Programmi</a>
+      <a href="/bacheca" class="secondario {%if selected=="bacheca"%}selected{%endif%}">Bacheca</a>
+      {% endif %}
     </div>
     <div id="footer">
       <p>Club Alpino Italiano</p>
       <p>Sezione di SOVICO</p>
       <p><a href="/en">English</a></p>
+      <p>Tel: 0342 556010 - <a href="mailto:webmaster@caisovico.it">Email</a> </p>
       <p>
-        <a href="#">Chi Siamo</a> - 
+        <a href="https://www.instagram.com/rifugiodelgrandecamerini/">Instagram</a> - 
         <a href="https://www.facebook.com/Rifugio-Del-Grande-Camerini-897206810341504/">Facebook</a> - 
-        <a href="mailto:webmaster@caisovico.it">Email</a></p>
+      </p>
     </div>
   </div>
 
