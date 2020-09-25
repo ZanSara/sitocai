@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1> WebCam e Meteo </h1>
+
+<p>Il rifugio è equipaggiato con due webcams e una stazione meteo.</p>
+
+<h3>Centralina Meteo</h3>
+
+<p>Ultimo aggiornamento: {{ dati_meteo['Date'] }} alle {{ dati_meteo['Time'] }}
+ - Status: {{dati_meteo['Status'] }}
+</p>
+
+{% for key, value in dati_meteo.items() %}
+  <p>{{ key }}: {{value}}</p>
+{% endfor %}
+
+
+<h3>Webcam Principale (Rifugio e Valle)</h3>
+<p>La webcam principale è rivolta verso il rifugio e la valle, pensata per 
+gli escursionisti che vogliono accertarsi della situazione meteo prima di partire.</p>
+<p>Scatta una foto ogni ora: qui sotto puoi vedere le ultime tre foto. 
+Se vuoi vederne altre, visita l'<a href="#">archivio.</a></p>
+
+<div id="carousel-webcam1" class="carousel" data-active-slide="0">
+  <a class="carousel-control" role="button" onclick="javascript:moveLeft('carousel-webcam1');">
+    <p aria-hidden="true"><</p>
+    <span class="sr-only">Precedente</span>
+  </a>
+  
+  <div>
+    <div class="slide active">
+      <img src="http://www.caisovico.it/rifugio/webcam/webcam_rif/fotorifugio.jpg">
+      <p>Ultima foto</p>
+    </div>
+    <div class="slide">
+      <img src="http://www.caisovico.it/rifugio/webcam/webcam_rif/fotorifugio1.jpg">
+      <p>Foto precedente (un'ora prima)</p>
+    </div>
+    <div class="slide">
+      <img src="http://www.caisovico.it/rifugio/webcam/webcam_rif/fotorifugio2.jpg">
+      <p>Foto precedente (due ore prima)</p>
+    </div>
+  </div>
+
+  <a class="carousel-control" role="button" onclick="javascript:moveRight('carousel-webcam1');">
+    <p aria-hidden="true">></p>
+    <span class="sr-only">Successiva</span>
+  </a>
+</div>
+
+
+<h3>Webcam Disgrazia</h3>
+
+<p>L'altra webcam invece è rivolta verso la parete nord del Disgrazia ed è stata
+installata su richiesta del <a href="https://www.servizioglaciologicolombardo.it/">
+Servizio Glaciologico Lombardo</a> per monitorare il ghiacciaio. Scatta una foto
+al giorno.
+</p>
+
+<img src="http://www.caisovico.it/rifugio/webcam/webcam_ghi/fotoghiacciaio.jpg">
+
+
+{% endblock %}

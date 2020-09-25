@@ -7,6 +7,10 @@ from pages.models import Utente
 from pages.forms import LoginForm
 from flask_login import current_user, login_user, logout_user, login_required
 
+import csv
+import datetime
+from urllib.request import urlopen
+
 
 @app.route('/')
 @app.route('/index.html')
@@ -27,7 +31,28 @@ def rifugio_sentieri():
 @app.route('/rifugio/webcam')
 @app.route('/rifugio/webcam/webcam.html')
 def rifugio_webcams():
-    return render_template('rifugio-webcams.html', selected="rifugio_webcam")
+    # Leggi l'archivio
+    archivio = urlopen("http://www.caisovico.it/wm/wc2/meteo/dati.csv")
+    archivio_raw = archivio.readlines()
+    # Recupera l'header dall'archivio
+    header_decoded = archivio_raw[0].decode('utf-8')
+    header = header_decoded.split(",")
+    # Recupera i dati piu' recenti
+    data_decoded = archivio_raw[-1].decode('utf-8')
+    data = data_decoded.split(",")
+    # Unisce gli array
+    lista_dati = zip(header, data)
+    # Trasforma l'array in una hashmap
+    tabella = {}
+    for key, value in lista_dati:
+        tabella[key] = value
+    # Aggiungi qualche valore extra
+    last_update_diff = datetime.datetime.strptime("{} {}".format(tabella['Date'], tabella['Time']), '%d/%m/%Y %H:%M') - datetime.datetime.now()
+    if last_update_diff < datetime.timedelta(minutes=30):
+        tabella["Status"] = "ONLINE"
+    else:
+        tabella["Status"] = "OFFLINE"
+    return render_template('rifugio-webcam.html', selected="rifugio_webcam", dati_meteo=tabella)
 
 @app.route('/rifugio/bivacco')
 @app.route('/rifugio/rifugio-chiuso/rifugio-chiuso.html')
