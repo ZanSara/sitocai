@@ -22,8 +22,10 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/css/carousel.css"/>
   <script src="/static/js/scripts.js"></script>
-
+  <script src="/static/js/carousel.js"></script>
+  
 </head>
 <body>
 
@@ -45,10 +47,10 @@
       <a href="/rifugio" class="principale {%if selected=="rifugio"%}selected{%endif%}">Rifugio</a>
       
       {% if selected.startswith("rifugio") %}
-      <a href="/rifugio/percorsi" class="secondario {%if selected=="rifugio_percorsi"%}selected{%endif%}">Sentieri</a>
+      <a href="/rifugio/sentieri" class="secondario {%if selected=="rifugio_sentieri"%}selected{%endif%}">Sentieri</a>
       <a href="/rifugio/webcam" class="secondario {%if selected=="rifugio_webcam"%}selected{%endif%}">Webcam e Meteo</a>
+      <a href="/rifugio/bivacco" class="secondario {%if selected=="rifugio_bivacco"%}selected{%endif%}">Bivacco</a>
       <a href="/rifugio/storia" class="secondario {%if selected=="rifugio_storia"%}selected{%endif%}">Storia</a>
-      <a href="/rifugio/foto" class="secondario {%if selected=="rifugio_webcam"%}selected{%endif%}">Foto</a>
       {% endif %}
 
       <a href="/sezione" class="principale {%if selected=="sezione"%}selected{%endif%}">Sezione</a>

@@ -153,6 +153,13 @@ body {
   margin-bottom: 2rem;
 }
 
+#main h3 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
 #main h5 {
   font-size: 20px;
   font-weight: 500;
@@ -165,15 +172,16 @@ hr {
   border: 1px solid #cccccc;
 }
 
-#main p {
+#main p,
+#main a {
   font-size: 20px;
   margin-bottom: 1rem;
   line-height: 2rem;
 }
 
 #main img {
-  width: 100%;
-  margin: 2rem 0;
+  width: 90%;
+  margin: 5%;
 }
 
 #main .due-colonne{

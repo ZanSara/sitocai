@@ -19,25 +19,25 @@ def index():
 def rifugio():
     return render_template('rifugio.html', selected="rifugio")
 
-@app.route('/rifugio/percorsi')
+@app.route('/rifugio/sentieri')
 @app.route('/rifugio/rifugio-percorsi/rifugio-percorsi.html')
-def rifugio_percorsi():
-    return render_template('rifugio-percorsi.html', selected="rifugio_percorsi")
+def rifugio_sentieri():
+    return render_template('rifugio-sentieri.html', selected="rifugio_sentieri")
 
 @app.route('/rifugio/webcam')
 @app.route('/rifugio/webcam/webcam.html')
 def rifugio_webcams():
     return render_template('rifugio-webcams.html', selected="rifugio_webcam")
 
+@app.route('/rifugio/bivacco')
+@app.route('/rifugio/rifugio-chiuso/rifugio-chiuso.html')
+def rifugio_bivacco():
+    return render_template('rifugio-bivacco.html', selected="rifugio_bivacco")
+
 @app.route('/rifugio/storia')
 @app.route('/rifugio/rifugio-storia/rifugio-storia.html')
 def rifugio_storia():
     return render_template('rifugio-storia.html', selected="rifugio_storia")
-
-@app.route('/rifugio/foto')
-@app.route('/rifugio/rifugio-lavori/rifugio-lavori.html')
-def rifugio_foto():
-    return render_template('rifugio-foto.html', selected="rifugio_lavori")
 
 
 @app.route('/sezione')
