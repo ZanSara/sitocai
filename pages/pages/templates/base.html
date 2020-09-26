@@ -47,6 +47,7 @@
       <a href="/rifugio" class="principale {%if selected=="rifugio"%}selected{%endif%}">Rifugio</a>
       
       {% if selected.startswith("rifugio") %}
+      <a href="/rifugio/prenotazioni" class="secondario {%if selected=="rifugio_prenotazioni"%}selected{%endif%}">Prenotazioni</a>
       <a href="/rifugio/sentieri" class="secondario {%if selected=="rifugio_sentieri"%}selected{%endif%}">Sentieri</a>
       <a href="/rifugio/webcam" class="secondario {%if selected=="rifugio_webcam"%}selected{%endif%}">Webcam e Meteo</a>
       <a href="/rifugio/bivacco" class="secondario {%if selected=="rifugio_bivacco"%}selected{%endif%}">Bivacco</a>
@@ -56,18 +57,21 @@
       <a href="/sezione" class="principale {%if selected=="sezione"%}selected{%endif%}">Sezione</a>
 
       {% if selected.startswith("sezione") %}
-      <a href="/programmi" class="secondario {%if selected=="programmi"%}selected{%endif%}">Programmi</a>
-      <a href="/bacheca" class="secondario {%if selected=="bacheca"%}selected{%endif%}">Bacheca</a>
+      <a href="/sezione/bacheca" class="secondario {%if selected=="sezione_bacheca"%}selected{%endif%}">Bacheca</a>
+      <a href="/sezione/programmi" class="secondario {%if selected=="sezione_programmi"%}selected{%endif%}">Programmi</a>
+      <a href="/sezione/quote" class="secondario {%if selected=="sezione_quote"%}selected{%endif%}">Quote</a>
+      <a href="/sezione/storia" class="secondario {%if selected=="sezione_storia"%}selected{%endif%}">Storia</a>
       {% endif %}
     </div>
     <div id="footer">
-      <p>Club Alpino Italiano</p>
-      <p>Sezione di SOVICO</p>
-      <p><a href="/en">English</a></p>
-      <p>Tel: 0342 556010 - <a href="mailto:webmaster@caisovico.it">Email</a> </p>
+      {% if url %}
+      <p><b>IT - <a href="{{url}}">EN</a></b></p>
+      {% endif %}
       <p>
+        <a href="mailto:webmaster@caisovico.it">Email</a> - 
         <a href="https://www.instagram.com/rifugiodelgrandecamerini/">Instagram</a> - 
-        <a href="https://www.facebook.com/Rifugio-Del-Grande-Camerini-897206810341504/">Facebook</a> - 
+        <a href="https://www.facebook.com/Rifugio-Del-Grande-Camerini-897206810341504/">Facebook</a>
+        <p>Copyright 2020 - CAI Sovico</p>
       </p>
     </div>
   </div>

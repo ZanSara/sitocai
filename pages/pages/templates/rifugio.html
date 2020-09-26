@@ -28,8 +28,71 @@ In ogni caso, il modo migliore per contattarci è scrivere al nostro <a href="ma
 
 <p>Durante la stagione di apertura e anche possibile contattarci per telefono al <b>0342 556010</b>.</p> 
 
-<img src="/static/images/rifugio-foto-homepage.jpg">
 
+<video autoplay controls muted>
+  <source src="/static/assets/video/film-intro2.mp4" type="video/mp4">
+  Il tuo brawser non permette di vedere video nativi. Cambia Browser!
+</video>
+
+
+<div id="carousel" class="carousel" data-active-slide="0">
+  <a class="carousel-control" role="button" onclick="javascript:moveLeft('carousel');">
+    <p aria-hidden="true"><</p>
+    <span class="sr-only">Precedente</span>
+  </a>
+  
+  <div>
+    <div class="slide active">
+      <img alt="Vista del rifugio con la parete nord del M.Disgrazia" src="/static/images/rifugio/f_rif_foto_vistaext.jpg">
+      <p>Vista del rifugio con la parete nord del M.Disgrazia</p>
+    </div>
+    <div class="slide">
+      <img alt="Vista frontale del rifugio con il nuovo bivacco" src="/static/images/rifugio/f_rif_foto_fronte.jpg">
+      <p>Vista frontale del rifugio con il nuovo bivacco</p>
+    </div>
+    <div class="slide">
+      <img alt="Interno del Rifugio" src="/static/images/rifugio/f_rif_foto_interno1.jpg">
+      <p>Interno del Rifugio</p>
+    </div>
+    <div class="slide">
+      <img alt="Sala da pranzo" src="/static/images/rifugio/f_rif_foto_interno2.jpg">
+      <p>Sala da pranzo</p>
+    </div>
+    <div class="slide">
+      <img alt="Il soppalco con 4 comodi letti" src="/static/images/rifugio/f_rif_foto_soppalco.jpg">
+      <p>Il soppalco con 4 comodi letti</p>
+    </div>
+    <div class="slide">
+      <img alt="Interno a lume di candela" src="/static/images/rifugio/f_rif_foto_interno3.jpg">
+      <p>Interno a lume di candela</p>
+    </div>
+    <div class="slide">
+      <img alt="La nuova cucina" src="/static/images/rifugio/f_rif_foto_cucina.jpg">
+      <p> La nuova cucina</p>
+    </div>
+    <div class="slide">
+      <img alt="Colazione con vista sul M. Disgrazia" src="/static/images/rifugio/f_rif_foto_panorama.jpg">
+      <p>Colazione con vista sul M. Disgrazia</p>
+    </div>
+    <div class="slide">
+      <img alt="Uno stambecco che da qualche anno visita il nostro rifugio" src="/static/images/rifugio/f_rif_foto_stambecco.jpg">
+      <p>Uno stambecco che da qualche anno visita il nostro rifugio</p>
+    </div>
+    <div class="slide">
+      <img alt="Anche alcune marmotte si avvicinano alla balconata" src="/static/images/rifugio/f_rif_foto_marmotta.jpg">
+      <p>Anche alcune marmotte si avvicinano alla balconata</p>
+    </div>
+    <div class="slide">
+      <img alt="Esterno del rifugio di sera" src="/static/images/rifugio/f_rif_foto_extsera.jpg">
+      <p>Esterno del rifugio di sera</p>
+    </div>
+  </div>
+
+  <a class="carousel-control" role="button" onclick="javascript:moveRight('carousel');">
+    <p aria-hidden="true">></p>
+    <span class="sr-only">Successiva</span>
+  </a>
+</div>
 
 <h2>Dati Tecnici</h2>
 
@@ -87,5 +150,4 @@ In ogni caso, il modo migliore per contattarci è scrivere al nostro <a href="ma
 
 </div>
 
-<hr>
 {% endblock %}

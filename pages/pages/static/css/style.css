@@ -12,16 +12,10 @@
 }
 
 body {
-  background-color: #dddddd;
-}
-
-
-body {
   background-attachment: fixed;
   background-size: cover;
   background-image: url("/static/images/assets/sfondo.jpg");
 }
-
 
 #container {
   max-width: 1300px;
@@ -162,9 +156,9 @@ body {
 
 #main h5 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   width: 100%;
-  margin: 3rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 hr {
@@ -173,20 +167,42 @@ hr {
 }
 
 #main p,
-#main a {
+#main a,
+#main li {
   font-size: 20px;
   margin-bottom: 1rem;
   line-height: 2rem;
 }
 
-#main img {
+#main ul,
+#main ol {
+  padding-left: 3rem;
+}
+
+#main img,
+#main video {
   width: 90%;
+  height: auto;
   margin: 5%;
 }
 
 #main .due-colonne{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+#main .due-colonne *{
+  max-width: 85%;
+}
+
+#main .evento{
+  margin-bottom: 2rem;
+}
+#main .evento p {
+  line-height: 1.2rem;
+}
+#main .small{
+  font-style: italic;
+  font-size: 18px;
 }
 
 #main table{
@@ -199,6 +215,13 @@ hr {
   padding-right: 1rem;
 }
 
+#main p.descrizione-foto {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  color: #333;
+  font-size: 18px;
+}
 
 #main .annuncio {
   padding: 2rem;
