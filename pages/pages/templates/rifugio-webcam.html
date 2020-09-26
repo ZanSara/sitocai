@@ -11,9 +11,31 @@
  - Status: {{dati_meteo['Status'] }}
 </p>
 
-{% for key, value in dati_meteo.items() %}
-  <p>{{ key }}: {{value}}</p>
-{% endfor %}
+<h3>Temperature</h3>
+<p>Temperatura: {{ dati_meteo['Temp Out'] }}°C</p>
+<p>Umidita': {{ dati_meteo['Hum Out'] }}%</p>
+<p>Temperatura Percepita: --- </p>
+
+<p>Temp. Massima (oggi): {{ dati_meteo['Hi Temp'] }}°C alle ---</p>
+<p>Temp. Minima (oggi): {{ dati_meteo['Low Temp'] }}°C alle ---</p>
+
+<h3>Vento</h3>
+<p>Vento: {{ dati_meteo['Wind Speed'] }} km/h da {{ dati_meteo['Wind Dir'] }}</p>
+<p>Vento Medio (oggi): ---</p>
+<p>Raffica massima: {{ dati_meteo['Hi Speed'] }} km/h da {{ dati_meteo['Hi Dir'] }} alle ---</p>
+<p>Wind Chill: --- </p>
+
+<h3>Precipitazioni</h3>
+<p>Pioggia attuale: {{ dati_meteo['Rain Rate'] }} mm</p>
+<p>Pioggia oggi: {{ dati_meteo['Rain'] }} mm</p>
+<p>Pioggia massima oggi: ---</p>
+
+<p>Punto di rugiada: ---°C</p>
+
+<p>Pressione attuale: {{ dati_meteo['BAR'] }} mbar</p>
+<p>Pressione massima oggi: --- mbar</p>
+<p>Pressione minima oggi: --- mbar</p>
+<hr>
 
 
 <h3>Webcam Principale (Rifugio e Valle)</h3>

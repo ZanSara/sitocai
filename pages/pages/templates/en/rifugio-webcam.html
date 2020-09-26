@@ -1,61 +1,58 @@
 {% extends 'en/base.html' %}
 {% block content %}
 
-<h1> WebCam e Meteo </h1>
+<h1> WebCams and Meteo </h1>
 
-<p>Il rifugio è equipaggiato con due webcams e una stazione meteo.</p>
+<p>The hut is equipped with two webcams and a weather monitoring station.</p>
 
-<h3>Centralina Meteo</h3>
+<h3>Weather Monitor</h3>
 
-<p>Ultimo aggiornamento: {{ dati_meteo['Date'] }} alle {{ dati_meteo['Time'] }}
+<p>Last Update: {{ dati_meteo['Date'] }} at {{ dati_meteo['Time'] }}
  - Status: {{dati_meteo['Status'] }}
 </p>
 
-{% for key, value in dati_meteo.items() %}
-  <p>{{ key }}: {{value}}</p>
-{% endfor %}
-
-
-<h3>Webcam Principale (Rifugio e Valle)</h3>
-<p>La webcam principale è rivolta verso il rifugio e la valle, pensata per 
-gli escursionisti che vogliono accertarsi della situazione meteo prima di partire.</p>
-<p>Scatta una foto ogni ora: qui sotto puoi vedere le ultime tre foto. 
-Se vuoi vederne altre, visita l'<a href="#">archivio.</a></p>
+<h3>Main Webcam (Hut and Valley)</h3>
+<p>The main webcam overlooks the hut, the Alpi Vazzeda and Chiareggio.
+It's meant for hikers that want to check the weather conditions
+before departing.</p>
+<p>It takes a picture every hour: here below you can see the last three.
+To see more, please visit the <a href="#">archive.</a></p>
 
 <div id="carousel-webcam1" class="carousel" data-active-slide="0">
   <a class="carousel-control" role="button" onclick="javascript:moveLeft('carousel-webcam1');">
     <p aria-hidden="true"><</p>
-    <span class="sr-only">Precedente</span>
+    <span class="sr-only">previous</span>
   </a>
   
   <div>
     <div class="slide active">
       <img src="http://www.caisovico.it/rifugio/webcam/webcam_rif/fotorifugio.jpg">
-      <p>Ultima foto</p>
+      <p>Last Picture</p>
     </div>
     <div class="slide">
       <img src="http://www.caisovico.it/rifugio/webcam/webcam_rif/fotorifugio1.jpg">
-      <p>Foto precedente (un'ora prima)</p>
+      <p>Previous picture (one hour earlier)</p>
     </div>
     <div class="slide">
       <img src="http://www.caisovico.it/rifugio/webcam/webcam_rif/fotorifugio2.jpg">
-      <p>Foto precedente (due ore prima)</p>
+      <p>Previous picture (two hours earlier)</p>
     </div>
   </div>
 
   <a class="carousel-control" role="button" onclick="javascript:moveRight('carousel-webcam1');">
     <p aria-hidden="true">></p>
-    <span class="sr-only">Successiva</span>
+    <span class="sr-only">Next</span>
   </a>
 </div>
 
 
-<h3>Webcam Disgrazia</h3>
+<h3>Glacier's Webcam</h3>
 
-<p>L'altra webcam invece è rivolta verso la parete nord del Disgrazia ed è stata
-installata su richiesta del <a href="https://www.servizioglaciologicolombardo.it/">
-Servizio Glaciologico Lombardo</a> per monitorare il ghiacciaio. Scatta una foto
-al giorno.
+<p>The second webcam is pointing towards the north face of Mt. Disgrazia and
+it was put in place on request of the the 
+<a href="https://www.servizioglaciologicolombardo.it/">
+Lombardia's Glaciological Services</a> 
+to monitor the glacier. It takes one picture a day.
 </p>
 
 <img src="http://www.caisovico.it/rifugio/webcam/webcam_ghi/fotoghiacciaio.jpg">
