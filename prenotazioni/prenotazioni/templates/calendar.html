@@ -1,0 +1,124 @@
+    <!-- MAIN TABLE -->
+    <div class="row">
+        <div id="calendario-box" class="calendario-outer-box shadow2">
+          <table id="tableid" style="overflow:hidden;">
+              <tr><td>
+                <div class='scrollable'>
+                <table class="calendario">
+                    <tr>
+                        <td class='giorno' style="border: 1px solid #fff;">Data</td>
+                        <td class='gestore' style="border: 1px solid #fff;">Gestore</td>
+                        <td class='letto'></td>
+                        <td class='letto'></td>
+                        <td class='letto'></td>
+                        <td class='letto'></td>
+                        <td class='letto'>Letti</td>
+                        <td class='letto'></td>
+                        <td class='letto'></td>
+                        <td class='letto'></td>
+                        <td class='letto'></td>
+                        <td class='letto'></td>
+                        <td class="emergenza" style="border-left: 1px solid #fff;"></td>
+                        <td class="emergenza">Emergenza</td>
+                        <td class="emergenza"></td>
+                        <td class="emergenza"></td>
+                        <td class="emergenza"></td>
+                        <td class="emergenza"></td>
+                    </tr>
+                </table>
+                </div>
+              </td></tr>
+              <tr><td>
+                <div class="calendario-inner-box scrollable">
+                <table class="calendario grid">
+                  <colgroup>
+                        <col class='giorno'>
+                        <col class='gestore'>
+                        <col class='letto'>
+                        <col class='letto'>
+                        <col class='letto'>
+                        <col class='letto'>
+                        <col class='letto'>
+                        <col class='letto'>
+                        <col class="letto">
+                        <col class="letto">
+                        <col class="letto">
+                        <col class="letto">
+                        <col class="emergenza">
+                        <col class="emergenza">
+                        <col class="emergenza">
+                        <col class="emergenza">
+                        <col class="emergenza">
+                        <col class="emergenza">
+                  </colgroup>
+                  <tbody>
+                  {% for giorno, dettagli in calendario.items() %}
+                        <tr id='{{giorno}}' {% if giorno.day == 1 %} style='border-top: 4px solid black;' {% endif %}>
+                            {# Date cell #}
+                            <td 
+                                {% if giorno.weekday() == 5 %} style='color:blue;' {% endif %}
+                                {% if giorno.weekday() == 6 %} style='color:red;' {% endif %}
+                                {% if giorno.month == 8 and giorno.day == 15 %} style='color:red; text-decoration:underline;' {% endif %}
+                            > 
+                                {{ giorno.strftime("%d %b").title() }}
+                            </td>
+                            
+                            {# Gestore cell #}
+                            {% if not dettagli.gestore %} 
+                            <td class="nogestore">
+                                <div class='gestore-div'>
+                                    Nessuno!
+                                </div> 
+                            </td>
+                            {% else %}
+                            <td class="P{{prenotazioni.gestore.id}}">
+                                <a id='{{giorno_dell_anno}}-G' onclick='javascript:openNewBookingModal(1, {{prenotazioni.gestore.id}}, 1);' >
+                                    <div class='gestore-div'>
+                                        {{dettagli.gestore.nome}} 
+                                    </div>
+                                </a>
+                            </td>
+                            {% endif %}
+
+                            {# Prenotazioni cells #}
+                            {% set posti_occupati = 0 %}
+                            {% for prenotazione in dettagli.prenotazioni %}
+                                {% set posti_occupati = posti_occupati + prenotazione.posti %}
+                                {% for posto in prenotazione.posti %}
+                                    <td class='P{{ prenotazione.id }}' 
+                                        style='background:{{ prenotazione.colore }}; 
+                                            {% if ultima_prenotazione == prenotazione.id %} 
+                                                border: yellow 4px solid; 
+                                            {% endif %}'>
+                                        <a onclick='javascript:openNewBookingModal(1, "{{ prenotazione.id }}", 0);' >
+                                            <div class='booking-div' style="border: red 1px solid;">
+                                                P{{ prenotazione.id }}
+                                            </div>
+                                        </a>
+                                    </td>
+                                {% endfor %}
+                            {% endfor %}
+                            {% for posto_libero in range(16-posti_occupati) %}
+                                <td></td>
+                            {% endfor %}
+                        </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </td></tr>
+          </tbody>
+        </table>
+
+        {% if authenticated %}
+        <!-- Move me somewhere else! -->
+        <script type="text/javascript">
+            // Reset Find_Modal when closed
+            $("#FindModal").on("hidden.bs.modal", function (event) {
+                resetFindModal();
+            });
+        </script>
+        {% endif %}
+        
+      </div>
+    </div>
