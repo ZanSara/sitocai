@@ -7,13 +7,13 @@
 
 <h3>Centralina Meteo</h3>
 
-<p>Ultimo aggiornamento: {{ dati_meteo['Date'] }} alle {{ dati_meteo['Time'] }}
+<!--p>Ultimo aggiornamento: {{ dati_meteo['Date'] }} alle {{ dati_meteo['Time'] }}
  - Status: {{dati_meteo['Status'] }}
 </p>
 
 <h3>Temperature</h3>
 <p>Temperatura: {{ dati_meteo['Temp Out'] }}°C</p>
-<p>Umidita': {{ dati_meteo['Hum Out'] }}%</p>
+<p>Umidita': {{ dati_meteo['Out Hum'] }}%</p>
 <p>Temperatura Percepita: --- </p>
 
 <p>Temp. Massima (oggi): {{ dati_meteo['Hi Temp'] }}°C alle ---</p>
@@ -29,14 +29,28 @@
 <p>Pioggia attuale: {{ dati_meteo['Rain Rate'] }} mm</p>
 <p>Pioggia oggi: {{ dati_meteo['Rain'] }} mm</p>
 <p>Pioggia massima oggi: ---</p>
+<p>Pioggia mese: ---</p>
+<p>Pioggia anno: ---</p>
 
 <p>Punto di rugiada: ---°C</p>
 
 <p>Pressione attuale: {{ dati_meteo['BAR'] }} mbar</p>
 <p>Pressione massima oggi: --- mbar</p>
-<p>Pressione minima oggi: --- mbar</p>
-<hr>
+<p>Pressione minima oggi: --- mbar</p-->
 
+
+<div class="due-colonne">
+<p>
+  <details>
+    <summary>Dati Grezzi</summary>
+    <pre>
+    {{dati_meteo}}
+    </pre>
+  </details>
+</p>
+</div>
+
+<hr>
 
 <h3>Webcam Principale (Rifugio e Valle)</h3>
 <p>La webcam principale è rivolta verso il rifugio e la valle, pensata per 

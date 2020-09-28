@@ -5,10 +5,13 @@ from flask import render_template, flash, redirect, url_for, request
 from pages import app
 from pages.models import Utente
 from pages.forms import LoginForm
+from pages.meteo import convert_meteo_data
 from flask_login import current_user, login_user, logout_user, login_required
 
 import csv
+import json
 import datetime
+from pathlib import Path
 from urllib.request import urlopen
 
 
@@ -46,29 +49,23 @@ def rifugio_sentieri():
 @app.route('/rifugio/webcam/webcam.html')
 @app.route('/rifugio/webcam/en')
 def rifugio_webcams():
-    # Leggi l'archivio
-    archivio = urlopen("http://www.caisovico.it/wm/wc2/meteo/dati.csv")
-    archivio_raw = archivio.readlines()
-    # Recupera l'header dall'archivio
-    header_decoded = archivio_raw[0].decode('utf-8')
-    header = header_decoded.split(",")
-    # Recupera i dati piu' recenti
-    data_decoded = archivio_raw[-1].decode('utf-8')
-    data = data_decoded.split(",")
-    # Unisce gli array
-    lista_dati = zip(header, data)
-    # Trasforma l'array in una hashmap
-    tabella = {}
-    for key, value in lista_dati:
-        tabella[key] = value
-    # Aggiungi qualche valore extra
-    last_update_diff = datetime.datetime.strptime("{} {}".format(tabella['Date'], tabella['Time']), '%d/%m/%Y %H:%M') - datetime.datetime.now()
-    if last_update_diff < datetime.timedelta(minutes=30):
-        tabella["Status"] = "ONLINE"
-    else:
-        tabella["Status"] = "OFFLINE"
+    # Read the JSON
+    response = urlopen("http://www.caisovico.it/wm/wc2/meteo/wflexp.json")
+    data_json = json.loads(response.read())
+
+    response = urlopen("http://www.caisovico.it/wm/wc2/meteo/realtime.txt").read()
+    realtime_data = response.decode('utf-8').split(" ")
+    realtime_header = "date time temp_now hum_now ? ? wind_now ? rain_now ? pressure wind_dir ? wind_unit temp_unit ba_unit rain_unit ? ? rain_month rain_year ? ? ? wind_chill ? temp_max temp_max_time temp_min temp_min_time gust_speed gust_speed_time gust_speed gust_speed_time pressure_max pressure_max_time pressure_min pressure_min_time ? ? ? heat_index ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?".split(" ")
+    realtime = {key: value for key, value in zip(realtime_header, realtime_data)}
+    print(realtime)
+    
+    data = convert_meteo_data(data_json, realtime)
+    
+    dati_string = json.dumps(data_json, indent=4)
+    data_string = json.dumps(data, indent=4)
     # Render
-    return double_render_template('rifugio-webcam.html', selected="rifugio_webcam", dati_meteo=tabella)
+    return double_render_template('rifugio-webcam.html', selected="rifugio_webcam", dati_meteo=data_string, dati_string=dati_string)
+
 
 @app.route('/rifugio/bivacco')
 @app.route('/rifugio/rifugio-chiuso/rifugio-chiuso.html')

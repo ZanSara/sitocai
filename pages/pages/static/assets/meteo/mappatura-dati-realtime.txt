@@ -1,0 +1,58 @@
+Date
+Time
+Temp Out	
+Out Hum
+? Dew Point
+? Wind Avg
+Wind
+?   - 38?
+Rain Rate
+? Rain Today
+Pressure	
+Wind Dir
+?       - Zero
+Wind Units	
+Temp Units	
+Bar Units	
+Rain Units
+?   - ---
+?   - ---
+Rain Month
+Rain Year
+?   - ---
+?   - 23.3
+?   - 32
+Wind Chill
+?   - ---
+Temp Max
+Temp Max Time
+Temp Min	
+Temp Min Time
+Gust Speed	
+Gust Speed Time	
+Gust Speed	
+Gust Speed Time		
+Pressure Max	
+Pressure Max Time
+Pressure Min	
+Pressure Min Time
+?   - 2.33
+?   - 2.33
+?   - 4.8
+Heat Index
+?   - ---
+?   - ---
+?   - 0.00
+?   - ---
+?   - ---
+?   - 0.00
+?   - 0
+?   - 0
+?   - 0
+?   - 0
+?   - 0
+?   - 0
+?   - 0
+?   - 0
+?   - 0
+?   - 0
