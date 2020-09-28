@@ -1,4 +1,4 @@
-**/sqlalchemy.conf
+pages/pages/sqlalchemy.conf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
