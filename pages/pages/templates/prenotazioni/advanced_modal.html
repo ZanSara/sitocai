@@ -1,38 +1,30 @@
-    <!-- ADVANCED MODAL -->
-    <div class="modal fade" id="Adv_Modal" tabindex="-1" role="dialog" aria-labelledby="Adv_ModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header text-center">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title">Funzioni Avanzate</h2>
+    <!-- ADVANCED -->
+    <div id="Advanced_Modal" class="background">
+        <div class="modal small">
+            <div class="title">
+                <span></span>
+                <h2>Funzioni Avanzate</h2>
+                <span class="close" onclick="javascript:hideModal('Advanced_Modal');">&times;</span>
             </div>
+
+            <div class="body">
     
-            <div class="modal-body">
-    
-                <div style="padding-left:5%;padding-right:5%;" >
-                <div class="row">
-                    <a class="col-sm-3 btn btn-info" href="{{ url_for('prenotazioni') }}">Calendario</a>
-                    <p class="col-sm-8 ">Genera una tabella stampabile delle prenotazioni di ogni gestore.</p>
-                </div>
-                <hr>
-                <div class="row">
-                    <a class="col-sm-3 btn btn-success" href="{{ url_for('ospiti') }}">Tabella Ospiti</a>
-                    <p class="col-sm-8">Genera una tabella stampabile di tutti gli ospiti che hanno pernottato al rifugio durate questa stagione.</p>
-                </div>
-                <!--hr>
-                <div class="row">
-                    <a class="col-sm-3 btn btn-danger" href="erase-database-stage1">Svuota Database</a>
-                    <p class="col-sm-8">Svuota completamente il database delle prenotazioni.<br>ATTENZIONE! Questa operazione è IRREVERSIBILE!</p>
-                </div-->
-                </div>
-                
-                <div class="modal-footer center">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-                </div>
-    
+                    <div class="row">
+                        <a href="{{ url_for('prenotazioni') }}">Calendario</a>
+                        <p>Genera una tabella stampabile delle prenotazioni di ogni gestore.</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <a href="{{ url_for('ospiti') }}">Tabella Ospiti</a>
+                        <p>Genera una tabella stampabile di tutti gli ospiti che hanno pernottato al rifugio durate questa stagione.</p>
+                    </div>
+
             </div>
-            
+
+            <div class="footer center">
+                <a href="#" class="btn" onclick="javascript:hideModal('Advanced_Modal');">Chiudi</a>
             </div>
+
         </div>
-        </div>
+    </div>
       

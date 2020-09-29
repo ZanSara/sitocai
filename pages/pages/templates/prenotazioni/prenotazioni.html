@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    
+    {% if current_user.is_anonymous %}
+        {% include "prenotazioni/about_modal.html" %}
+        {% include "prenotazioni/login_modal.html" %}   
+    {% else %}
+        {#% include "prenotazioni/new_booking_modal.html" %#}
+        {#% include "prenotazioni/find_modal.html" %#}
+        {% include "prenotazioni/advanced_modal.html" %}
+    {% endif %}
+
+    <div id="prenotazioni">
+        <h1>Prenotazioni</h1>
+        
+        <!-- MAIN TABLE -->
+        <div class="table-container" style="overflow-x:auto;">
+        <table>
+            <thead>
+                <tr class="header">
+                    <th class='giorno'>Data</th>
+                    <th class='gestore'>Gestore</th>
+                    <th class='letto' colspan=10>Letti</th>
+                    <th class="emergenza" colspan=6>Emergenza</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for giorno, dettagli in calendario.items() %}
+                <tr id='{{giorno}}'>
+                    {# Date cell #}
+                    <td 
+                        {% if giorno.weekday() == 5 %} style='color:blue;' {% endif %}
+                        {% if giorno.weekday() == 6 %} style='color:red;' {% endif %}
+                        {% if giorno.month == 8 and giorno.day == 15 %} style='color:red; text-decoration:underline;' {% endif %}
+                    > 
+                        {{ giorno.strftime("%d %b").title() }}
+                    </td>
+                    
+                    {# Gestore cell #}
+                    {% if not dettagli.gestore %} 
+                    <td>---</td>
+                    {% else %}
+                    <td class="P{{prenotazioni.gestore.id}}">
+                        <a id='{{giorno_dell_anno}}-G' onclick='javascript:openNewBookingModal(1, {{prenotazioni.gestore.id}}, 1);' >
+                            <div class='gestore-div'>
+                                {{dettagli.gestore.nome}} 
+                            </div>
+                        </a>
+                    </td>
+                    {% endif %}
+
+                    {# Prenotazioni cells #}
+                    {% set posti_occupati = 0 %}
+                    {% for prenotazione in dettagli.prenotazioni %}
+                        {% set posti_occupati = posti_occupati + prenotazione.posti %}
+                        {% for posto in prenotazione.posti %}
+                            <td class='P{{ prenotazione.id }}' 
+                                style='background:{{ prenotazione.colore }}; 
+                                    {% if ultima_prenotazione == prenotazione.id %} 
+                                        border: yellow 4px solid; 
+                                    {% endif %}'>
+                                <a onclick='javascript:openNewBookingModal(1, "{{ prenotazione.id }}", 0);' >
+                                    <div class='booking-div' style="border: red 1px solid;">
+                                        P{{ prenotazione.id }}
+                                    </div>
+                                </a>
+                            </td>
+                        {% endfor %}
+                    {% endfor %}
+                    {% for posto_libero in range(16-posti_occupati) %}
+                        <td></td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        </div>
+
+        {% if authenticated %}
+        <!-- Move me somewhere else! -->
+        <script type="text/javascript">
+            // Reset Find_Modal when closed
+            $("#FindModal").on("hidden.bs.modal", function (event) {
+                resetFindModal();
+            });
+        </script>
+        {% endif %}
+        
+        
+        <div class="footer">
+        {% if current_user.is_anonymous %}
+            <a href="#" class="btn" onclick="javascript:showModal('About_Modal');">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="#" class="btn" onclick="javascript:showModal('Login_Modal');">
+                <i class="fas fa-lock"></i>
+                <span>Area Riservata</span>
+            </a>
+        {% else %}
+            <a class="btn" href="#" onclick="javascript:openNewBookingModal(0, 0, 0)">
+                <i class="fas fa-pencil-alt"></i>
+                <span>Nuova Prenotazione</span>
+            </a>
+            <a class="btn" href="#" onclick="javascript:showModal('Find_Modal');">
+                <i class="fas fa-search"></i>
+                <span>Cerca</span>
+            </a>
+            <a class="btn" href="#" onclick="javascript:showModal('Advanced_Modal');">
+                <i class="fas fa-cog"></i>
+                <span>Avanzate</span>
+            </a>
+            <a class="btn" href="{{ url_for('logout')}}">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        {% endif %}
+        </div> 
+    </div> 
+
+{% endblock %}
+<!--/body>
+</html-->

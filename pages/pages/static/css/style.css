@@ -200,7 +200,7 @@ hr {
 #main .evento p {
   line-height: 1.2rem;
 }
-#main .small{
+#main .data{
   font-style: italic;
   font-size: 18px;
 }
@@ -209,7 +209,8 @@ hr {
   max-width: 90vw;
 }
 
-#main td{
+#main td,
+#main th{
   font-size: 20px;
   line-height: 2rem;
   padding-right: 1rem;
@@ -309,6 +310,61 @@ hr {
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
+#prenotazioni{
+  margin: -4vh;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+}
+#prenotazioni h1 {
+  margin: 1rem;
+}
+#prenotazioni .table-container{
+  height:70vh;
+  flex-grow: 1; /* stretches to occupy all the available space */
+  border: 1px solid #ccc;
+}
+#prenotazioni table {
+  max-width: 100%;
+  width:100%;
+  border-collapse: collapse;
+}
+#prenotazioni td,
+#prenotazioni th {
+  border: 1px solid white;
+  vertical-align: center;
+  padding: 0.5rem 1rem;
+}
+#prenotazioni th {
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  background-color: rgb(221, 221, 221);
+}
+#prenotazioni th.gestore {
+  background-color: rgb(226, 202, 156);
+}
+#prenotazioni tbody > tr > :nth-child(2){
+  background-color: rgb(255, 242, 218);
+}
+#prenotazioni th.letto {
+  background-color: rgb(148, 230, 155);
+}
+#prenotazioni tbody > tr > :nth-child(n+3):nth-last-child(n+7){
+  background-color: rgb(189, 246, 194);
+}
+#prenotazioni th.emergenza {
+  background-color: rgb(233, 163, 163);
+}
+#prenotazioni tbody > tr > :nth-child(n+13):nth-last-child(n){
+  background-color: rgb(252, 206, 206);
+}
+
+#prenotazioni .footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+
 
 @media (max-width: 800px) {
 
@@ -358,6 +414,14 @@ hr {
   #main {
     margin-top: 60px;
     margin-left: 0;
+    min-height: calc(100vh - 10vh - 60px);
+  }
+  #prenotazioni {
+    height:80vh;
+    margin: calc(-5vh + 3%) calc(-5vh + 1%) 0 calc(-5vh + 1%);
+  }
+  #prenotazioni tbody{
+    height:calc(80vh - 4rem);
   }
 
   .http-error {
@@ -372,4 +436,8 @@ hr {
     box-shadow: none;
   }
   
+  .btn span{
+    display:none;
+  }
+
 } 

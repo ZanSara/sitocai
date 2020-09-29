@@ -1,0 +1,45 @@
+    <!-- LOGIN -->
+    <div id="Login_Modal" class="background" {% if get_flashed_messages() %}style="display:block;"{%endif%}>
+
+        <form class="modal small" method="post">
+
+            <div class="title">
+                <span></span>
+                <h2>Login</h2>
+                <span class="close" onclick="javascript:hideModal('Login_Modal');">&times;</span>
+            </div>
+
+            <div class="body center">
+
+                {{ form.csrf_token }}
+
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <div class="remove-on-close">
+                    {% if messages|length > 1 %}
+                    <ul>
+                        {% for message in messages %}
+                        <li><p style="color:#e00;">{{ message }}</p></li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <p style="color:#e00;">{{ messages[0] }}</p>
+                    {% endif %}
+                </div>
+                {% endif %}
+                {% endwith %}
+
+                <label for="username" class="sr-only">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required autofocus>
+
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                
+            </div>
+            <div class="footer center">
+                <button class="btn btn-green" type="submit">
+                    Accedi
+                </button>
+            </div>
+        </form>
+    </div>

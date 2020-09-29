@@ -5,7 +5,7 @@ from flask import render_template, flash, redirect, url_for, request
 from pages import app
 from pages.models import Utente, Prenotazione
 from pages.forms import LoginForm, ParametriForm
-from pages.meteo import convert_meteo_data
+from pages.functions import convert_meteo_data
 from flask_login import current_user, login_user, logout_user, login_required
 
 import csv
@@ -24,17 +24,17 @@ def double_render_template(url, **kwargs):
 @app.route('/')
 @app.route('/en')
 def index():
-    return double_render_template('index.html', selected="home")
+    return double_render_template('index.html', title="Home", selected="home")
 
 @app.route('/rifugio')
 @app.route('/rifugio/en')
 def rifugio():
-    return double_render_template('rifugio.html', selected="rifugio")
+    return double_render_template('rifugio.html', title="Rifugio", selected="rifugio")
 
 @app.route('/rifugio/sentieri')
 @app.route('/rifugio/sentieri/en')
 def rifugio_sentieri():
-    return double_render_template('rifugio-sentieri.html', selected="rifugio_sentieri")
+    return double_render_template('rifugio-sentieri.html', title="Sentieri", selected="rifugio_sentieri")
 
 @app.route('/rifugio/webcam')
 @app.route('/rifugio/webcam/en')
@@ -53,50 +53,51 @@ def rifugio_webcams():
     dati_string = json.dumps(data_json, indent=4)
     data_string = json.dumps(data, indent=4)
     # Render
-    return double_render_template('rifugio-webcam.html', selected="rifugio_webcam", dati_meteo=data_string, dati_string=dati_string)
+    return double_render_template('rifugio-webcam.html', title="Webcam", selected="rifugio_webcam", 
+            dati_meteo=data_string, dati_string=dati_string)
 
 
 @app.route('/rifugio/bivacco')
 @app.route('/rifugio/bivacco/en')
 def rifugio_bivacco():
-    return double_render_template('rifugio-bivacco.html', selected="rifugio_bivacco")
+    return double_render_template('rifugio-bivacco.html', title="Bivacco", selected="rifugio_bivacco")
 
 @app.route('/rifugio/storia')
 @app.route('/rifugio/storia/en')
 def rifugio_storia():
-    return double_render_template('rifugio-storia.html', selected="rifugio_storia")
+    return double_render_template('rifugio-storia.html', title="Storia del Rifugio", selected="rifugio_storia")
 
 
 @app.route('/sezione')
 @app.route('/sezione/en')
 def sezione():
-    return double_render_template('sezione.html', selected="sezione")
+    return double_render_template('sezione.html', title="Sezione", selected="sezione")
 
 @app.route('/sezione/quote')
 @app.route('/sezione/quote/en')
 def sezione_quote():
-    return double_render_template('sezione-quote.html', selected="sezione_quote")
+    return double_render_template('sezione-quote.html', title="Quote", selected="sezione_quote")
 
 @app.route('/sezione/storia')
 @app.route('/sezione/storia/en')
 def sezione_storia():
-    return double_render_template('sezione-storia.html', selected="sezione_storia")
+    return double_render_template('sezione-storia.html', title="Storia della Sezione", selected="sezione_storia")
 
 @app.route('/sezione/bacheca')
 def sezione_bacheca():
-    return render_template('sezione-bacheca.html', selected="sezione_bacheca")
+    return render_template('sezione-bacheca.html', title="Bacheca", selected="sezione_bacheca")
 
 @app.route('/sezione/programmi')
 @app.route('/programmi/programmi.html')
 def sezione_programmi():
-    return render_template('sezione-programmi.html', selected="sezione_programmi")
+    return render_template('sezione-programmi.html', title="Programmi", selected="sezione_programmi")
 
 
 
 
-@app.route('/rifugio/prenotazioni')
-@app.route('/rifugio/prenotazioni/en')
+@app.route('/rifugio/prenotazioni', methods=['GET', 'POST'])
 def prenotazioni():
+    # Calendario
     oggi = datetime.date(2019, 6, 3) #datetime.date.today()\
     anno_corrente = oggi.year
     giorno_dell_anno = (oggi - datetime.date(anno_corrente, 1, 1)).days
@@ -112,8 +113,19 @@ def prenotazioni():
         }
     for giorno in giorni_gestione}
 
-    return render_template('prenotazioni/base.html', 
-                                title="Prenotazioni",
+    # Login
+    login_form = LoginForm()
+    if login_form.validate_on_submit():
+        user = Utente.query.filter_by(username=login_form.username.data).first()
+        if user is None or not user.check_password(login_form.password.data):
+            flash('Nome utente o password errati')
+        else:
+            login_user(user)
+
+    return render_template('prenotazioni/prenotazioni.html', 
+                                title="Prenotazioni", 
+                                selected="rifugio_prenotazioni",
+                                form=login_form,
                                 year=anno_corrente, 
                                 oggi=oggi, 
                                 giorno_dell_anno=giorno_dell_anno,
@@ -125,9 +137,9 @@ def login():
     if login_form.validate_on_submit():
         user = Utente.query.filter_by(username=login_form.username.data).first()
 
-        #if user is None or not user.check_password(login_form.password.data):
-        #    flash('Nome utente o password errati')
-        #    return redirect(url_for('login'))
+        if user is None or not user.check_password(login_form.password.data):
+            flash('Nome utente o password errati')
+            return redirect(url_for('login'))
 
         login_user(user)
         return redirect('/rifugio/prenotazioni')
