@@ -1,0 +1,37 @@
+    <!-- TURNO -->
+    <div id="Turno_Modal" class="background">
+
+        <div class="modal small">
+
+            <form class="modal-form" action="/rifugio/prenotazioni/turno" method="post">
+                <div class="title">
+                    <span></span>
+                    <h2>Turno</h2>
+                    <span class="close" onclick="javascript:hideModal('Turno_Modal');">&times;</span>
+                </div>
+
+                <div class="body">
+                    <p>Genera una tabella stampabile delle prenotazioni in uno specifico intervallo di tempo.</p>
+
+                    {{ form.csrf_token }}
+
+                    <div class="tabella-form">
+                        <label>Data di Inizio</label>
+                        <input id="inizio" type="date" name="inizio" value="{{anno}}-06-01" required
+                            min="{{anno}}-06-01" max="{{anno}}-09-29" placeholder="dd-mm-yyyy"
+                            required pattern="\d{2}-\d{2}-\d{4}">
+                   
+                        <label>Data di Fine</label>
+                        <input id="fine" type="date" name="fine" value="{{anno}}-09-30" required
+                                min="{{anno}}-06-02" max="{{anno}}-09-30" placeholder="dd-mm-yyyy"
+                                required pattern="\d{2}-\d{2}-\d{4}">    
+                    </div>      
+                </div>
+
+                <div class="footer center">
+                    <button class="btn btn-green" type="submit">Invia</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>

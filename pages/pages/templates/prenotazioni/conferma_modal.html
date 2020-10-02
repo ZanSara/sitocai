@@ -1,0 +1,44 @@
+    <!-- CONFERMA -->
+    <div id="Conferma_Modal" class="background" style="opacity: 1; pointer-events: auto;">
+        <div class="modal small">
+
+        {% if prenotazione['errors']|length == 0 %}
+            <div class="title">
+                <span></span>
+                <h2>Nuova Prenotazione</h2>
+                <span class="close" onclick="javascript:hideModal('Conferma_Modal');">&times;</span>
+            </div>
+
+            <div class="body center">
+                <p>La nuova prenotazione è stata registrata.</p>
+                <p>Il numero della prenotazione è</p>
+                <h1>{{ prenotazione['id'] }}</h1>
+            </div>
+
+            <div class="footer center">
+                <button class="btn btn-blue" onclick="javascript:hideModal('Conferma_Modal');">Ok</button>
+            </div>
+
+          {% else %}
+
+            <div class="title">
+                <span></span>
+                <h2>Errore!</h2>
+                <span class="close" onclick="javascript:hideModal('Conferma_Modal');">&times;</span>
+            </div>
+
+            <div class="body">
+                <div class="error">
+                {% for error in prenotazione['errors'] %}
+                    <p>{{error}}</p>
+                {% endfor %}
+                </div>
+            </div>
+
+            <div class="footer center">
+                <button class="btn btn-red" onclick="javascript:hideModal('Conferma_Modal');">Ok</button>
+            </div>
+
+          {% endif %}
+        </div>
+    </div>

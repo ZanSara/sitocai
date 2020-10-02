@@ -1,7 +1,7 @@
     <!-- LOGIN -->
-    <div id="Login_Modal" class="background" {% if get_flashed_messages() %}style="display:block;"{%endif%}>
+    <div id="Login_Modal" class="background" {% if get_flashed_messages() %}style="opacity:1;pointer-events:auto;"{%endif%}>
 
-        <form class="modal small" method="post">
+        <form class="modal small" action="/rifugio/prenotazioni/login" method="post">
 
             <div class="title">
                 <span></span>
@@ -30,7 +30,7 @@
                 {% endwith %}
 
                 <label for="username" class="sr-only">Username</label>
-                <input type="text" id="username" name="username" placeholder="Username" required autofocus>
+                <input type="text" id="username" name="username" placeholder="Username" required>
 
                 <label for="password" class="sr-only">Password</label>
                 <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>

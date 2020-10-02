@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <h1>Lista Ospiti {{ anno }}</h1>
+    
+  <p>In questa stagione ci sono state in totale <b>{{ num_prenotazioni }} prenotazioni</b>, di cui {{ num_gestioni }} gestioni.</p>
+  
+  <div class="noprint">
+    <a class="btn" href="javascript:window.print()">Stampa la pagina</a>
+    <a class="btn" href="/rifugio/prenotazioni">Torna Indietro</a>
+  </div>
+
+  <table class="solo-bordi prima-riga-grigia">
+    <tr>
+      <th>N.</th>
+      <th>Nome</th>
+      <th>Prov.</th>
+      <th>Tel.</th>
+      <th>Arrivo</th>
+      <th>Giorni</th>
+      <th>Gestione</th>
+      <th>Posti</th>
+      <th>Resp.</th>
+      <th>Note</th>
+      <th>Cane</th>
+    </tr>
+    {% for prenotazione in lista_prenotazioni %}
+    <tr>
+        <td>{{ prenotazione.id }}</td>
+        <td>{{ prenotazione.nome }}</td>
+        <td>{{ prenotazione.provincia }}</td>
+        <td>{{ prenotazione.telefono }}</td>
+        <td>{{ prenotazione.arrivo }}</td>
+        <td>{% if prenotazioni.is_gestione %}--{% else %}{{ prenotazione.durata }}{% endif %}</td>
+        <td>{% if prenotazioni.is_gestione %}Sì{% else %}No{% endif %}</td>
+        <td>{% if prenotazioni.is_gestione %}--{% else %}{{ prenotazione.posti }}{% endif %}</td>
+        <td>{{ prenotazione.responsabile }}</td>
+        <td>{{ prenotazione.note }}</td>
+        <td>{{ prenotazione.cane }}</td>
+    <tr>
+    {% endfor %} 
+  </table>
+
+{% endblock %}

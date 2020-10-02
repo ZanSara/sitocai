@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <h1>Turno {{ inizio_turno }} - {{ fine_turno }}</h1>
+
+  {% if errors|length > 0 %}
+
+    <div class="error">
+      <h2>Errore!</h2>
+    {% for error in errors %}
+      <p>{{error}}</p>
+    {% endfor %}
+    </div>
+
+  {% else %}
+    
+    <p>Dal {{ inizio_turno }} al {{ fine_turno }} ci sono in totale <b>{{ num_prenotazioni }} prenotazioni</b>.</p>
+    
+    <div class="noprint">
+      <a class="btn" href="javascript:window.print()">Stampa la pagina</a>
+      <a class="btn" href="/rifugio/prenotazioni">Torna Indietro</a>
+    </div>
+
+    <h2 style="margin-top:1rem;">Calendario</h2>
+    <table class="solo-bordi prima-colonna-grigia">
+        
+      {% for giorno, prenotazioni in calendario.items() %}
+        <tr>
+            <td class="warning">{{ giorno.strftime("%d %b").title() }}</td>
+            {% set posti_occupati = 0 %}
+            {% for prenotazione in prenotazioni %}
+                {% set posti_occupati = posti_occupati + prenotazione.posti %}
+                {% for posto in prenotazione.posti %}
+                <td>N.{{ prenotazione.id }}</td>
+                {% endfor %}
+            {% endfor %}
+            {% for posto_libero in range(16-posti_occupati) %}
+                <td></td>
+            {% endfor %}
+        </tr>
+      {% endfor %}
+    </table>
+
+    <h2 style="margin-top:1rem;">Lista Ospiti</h2>
+
+    <table class="solo-bordi prima-riga-grigia">
+      <tr>
+        <th>N.</th>
+        <th>Nome</th>
+        <th>Tel.</th>
+        <th>Arrivo</th>
+        <th>Giorni</th>
+        <th>Posti</th>
+        <th>Resp.</th>
+        <th>Note</th>
+        <th>Cane</th>
+    </tr>
+    {% for prenotazione in lista_prenotazioni %}
+    <tr>
+        <td>{{ prenotazione.id }}</td>
+        <td>{{ prenotazione.nome }}</td>
+        <td>{{ prenotazione.telefono }}</td>
+        <td>{{ prenotazione.arrivo }}</td>
+        <td>{{ prenotazione.durata }}</td>
+        <td>{{ prenotazione.posti }}</td>
+        <td>{{ prenotazione.responsabile }}</td>
+        <td>{{ prenotazione.note }}</td>
+        <td>{{ prenotazione.cane }}</td>
+    <tr>
+    {% endfor %} 
+  </table>
+
+  {% endif%}
+{% endblock %}

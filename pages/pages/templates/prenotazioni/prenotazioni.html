@@ -1,18 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    
-    {% if current_user.is_anonymous %}
-        {% include "prenotazioni/about_modal.html" %}
-        {% include "prenotazioni/login_modal.html" %}   
-    {% else %}
-        {#% include "prenotazioni/new_booking_modal.html" %#}
-        {#% include "prenotazioni/find_modal.html" %#}
-        {% include "prenotazioni/advanced_modal.html" %}
-    {% endif %}
-
     <div id="prenotazioni">
-        <h1>Prenotazioni</h1>
+        <h1>Prenotazioni {{anno}}</h1>
         
         <!-- MAIN TABLE -->
         <div class="table-container" style="overflow-x:auto;">
@@ -77,16 +67,21 @@
         </table>
         </div>
 
-        {% if authenticated %}
-        <!-- Move me somewhere else! -->
-        <script type="text/javascript">
-            // Reset Find_Modal when closed
-            $("#FindModal").on("hidden.bs.modal", function (event) {
-                resetFindModal();
-            });
-        </script>
+        {% if current_user.is_anonymous %}
+            {% include "prenotazioni/about_modal.html" %}
+            {% include "prenotazioni/login_modal.html" %}   
+        {% else %}
+            {% include "prenotazioni/nuova_modal.html" %}
+            {% include "prenotazioni/cerca_modal.html" %}
+            {% include "prenotazioni/turno_modal.html" %}
         {% endif %}
-        
+
+        {% if nuova_prenotazione %}
+            {% with prenotazione = nuova_prenotazione %}
+                {% include "prenotazioni/conferma_modal.html"%}
+            {% endwith %}
+        {% endif %}
+
         
         <div class="footer">
         {% if current_user.is_anonymous %}
@@ -99,19 +94,23 @@
                 <span>Area Riservata</span>
             </a>
         {% else %}
-            <a class="btn" href="#" onclick="javascript:openNewBookingModal(0, 0, 0)">
+            <a class="btn" href="#" onclick="javascript:showModal('Nuova_Modal', prepareNuovaValidation());">
                 <i class="fas fa-pencil-alt"></i>
-                <span>Nuova Prenotazione</span>
+                <span>Nuova</span>
             </a>
-            <a class="btn" href="#" onclick="javascript:showModal('Find_Modal');">
+            <a class="btn" href="#" onclick="javascript:showModal('Cerca_Modal');">
                 <i class="fas fa-search"></i>
                 <span>Cerca</span>
             </a>
-            <a class="btn" href="#" onclick="javascript:showModal('Advanced_Modal');">
-                <i class="fas fa-cog"></i>
-                <span>Avanzate</span>
+            <a class="btn" href="#" onclick="javascript:showModal('Turno_Modal');">
+                <i class="fas fa-calendar"></i>
+                <span>Turno</span>
             </a>
-            <a class="btn" href="{{ url_for('logout')}}">
+            <a class="btn" href="/rifugio/prenotazioni/ospiti">
+                <i class="fas fa-user"></i>
+                <span>Ospiti</span>
+            </a>
+            <a class="btn" href="/rifugio/prenotazioni/logout">
                 <i class="fas fa-sign-out-alt"></i>
                 <span>Logout</span>
             </a>
