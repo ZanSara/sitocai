@@ -31,34 +31,44 @@
                     {% if not dettagli.gestore %} 
                     <td>---</td>
                     {% else %}
-                    <td class="P{{prenotazioni.gestore.id}}">
-                        <a id='{{giorno_dell_anno}}-G' onclick='javascript:openNewBookingModal(1, {{prenotazioni.gestore.id}}, 1);' >
-                            <div class='gestore-div'>
-                                {{dettagli.gestore.nome}} 
-                            </div>
-                        </a>
-                    </td>
+                        {% if current_user.is_anonymous%}
+                        <td>
+                            {{dettagli.gestore.nome[:10]}}{% if dettagli.gestore.nome|length > 10%}...{%endif%}
+                        </td>
+                        {% else %}
+                        <td onclick="javascript:modificaPrenotazione({{dettagli.gestore.id}});">
+                            {{dettagli.gestore.nome[:10]}}{% if dettagli.gestore.nome|length > 10%}...{%endif%}
+                        </td>
+                        {% endif %}
                     {% endif %}
 
                     {# Prenotazioni cells #}
-                    {% set posti_occupati = 0 %}
+                    {% set posti_occupati = namespace(value=0) %}
+
                     {% for prenotazione in dettagli.prenotazioni %}
-                        {% set posti_occupati = posti_occupati + prenotazione.posti %}
-                        {% for posto in prenotazione.posti %}
-                            <td class='P{{ prenotazione.id }}' 
-                                style='background:{{ prenotazione.colore }}; 
-                                    {% if ultima_prenotazione == prenotazione.id %} 
-                                        border: yellow 4px solid; 
-                                    {% endif %}'>
-                                <a onclick='javascript:openNewBookingModal(1, "{{ prenotazione.id }}", 0);' >
-                                    <div class='booking-div' style="border: red 1px solid;">
-                                        P{{ prenotazione.id }}
-                                    </div>
-                                </a>
+                        {% for posto in range(prenotazione.posti) %}
+
+                            {% set posti_occupati.value = posti_occupati.value + 1 %}
+
+                            {% if current_user.is_anonymous %}
+                            <td style="background-color:#ffddbb;">
+                                <i class="fas fa-times" style="color: red;"></i>
                             </td>
+                            {% else %}
+                            <td class="occupato p-{{prenotazione.id}}" 
+                                style='background:{{ prenotazione.colore }}; 
+                                        {% if nuova_prenotazione["id"] == prenotazione.id %} 
+                                            border: blue 4px solid; 
+                                        {% endif %}'
+                                onclick="javascript:modificaPrenotazione({{prenotazione.id}});"
+                                onmouseover="javascript:highlightPrenotazione({{prenotazione.id}});"
+                                onmouseout="javascript:dehighlightPrenotazione({{prenotazione.id}});">
+                                {{ prenotazione.nome[:2] }}
+                            </td>
+                            {% endif %}
                         {% endfor %}
                     {% endfor %}
-                    {% for posto_libero in range(16-posti_occupati) %}
+                    {% for posto_libero in range(16-posti_occupati.value) %}
                         <td></td>
                     {% endfor %}
                 </tr>
@@ -72,6 +82,7 @@
             {% include "prenotazioni/login_modal.html" %}   
         {% else %}
             {% include "prenotazioni/nuova_modal.html" %}
+            {% include "prenotazioni/modifica_modal.html" %}
             {% include "prenotazioni/cerca_modal.html" %}
             {% include "prenotazioni/turno_modal.html" %}
         {% endif %}
@@ -94,7 +105,7 @@
                 <span>Area Riservata</span>
             </a>
         {% else %}
-            <a class="btn" href="#" onclick="javascript:showModal('Nuova_Modal', prepareNuovaValidation());">
+            <a class="btn" href="#" onclick="javascript:showModal('Nuova_Modal');">
                 <i class="fas fa-pencil-alt"></i>
                 <span>Nuova</span>
             </a>

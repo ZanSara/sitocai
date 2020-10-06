@@ -64,8 +64,7 @@ function moveLeft(carouselId){
 /***************************/
 /*        MODAL            
 /***************************/
-function showModal(modalId, callback){
-  if (callback){ callback(); }
+function showModal(modalId){
   const modal = document.getElementById(modalId);
   modal.style.opacity = 1;
   modal.style.pointerEvents = "auto";
@@ -140,24 +139,6 @@ function submitModal(modalId, url, callback){
 /***************************/
 /*      PRENOTAZIONI            
 /***************************/
-function toggleGestione(){
-    const titolo = document.getElementById('Nuova_Modal').getElementsByClassName('title')[0].getElementsByTagName('h2')[0];
-    const posti = document.getElementById('nuova-posti');
-    const postiLabel = document.getElementById('nuova-posti-label');
-    
-    if (document.getElementById('nuova-gestione').checked){
-        titolo.innerText = "Nuova Gestione";
-        posti.disabled = true;
-        posti.style.display = 'none';
-        postiLabel.style.display = 'none';
-    } else {
-        titolo.innerText = "Nuova Prenotazione";
-        posti.disabled = false;
-        posti.style.display = 'block';
-        postiLabel.style.display = 'block';
-    }
-}
-
 function resetNuovaForm(){
     const modal = document.getElementById('Nuova_Modal');
     const form = modal.getElementsByTagName('form')[0];
@@ -171,6 +152,24 @@ function resetNuovaForm(){
     posti.disabled = false;
     posti.style.display = 'block';
     postiLabel.style.display = 'block';
+}
+
+function toggleGestione(modalId, prefix){
+    const titolo = document.getElementById(modalId).getElementsByClassName('title')[0].getElementsByTagName('h2')[0];
+    const posti = document.getElementById(prefix+'-posti');
+    const postiLabel = document.getElementById(prefix+'-posti-label');
+    
+    if (document.getElementById(prefix+'-gestione').checked){
+        titolo.innerText = titolo.innerText.replace("Prenotazione", "Gestione");
+        posti.disabled = true;
+        posti.style.display = 'none';
+        postiLabel.style.display = 'none';
+    } else {
+        titolo.innerText = titolo.innerText.replace("Gestione", "Prenotazione");
+        posti.disabled = false;
+        posti.style.display = 'block';
+        postiLabel.style.display = 'block';
+    }
 }
   
 // Ottiene la disponibilita' di letti per la data selezionata e per la durata selezionata
@@ -198,9 +197,58 @@ function getAvailabilityForDates(){
     });
 }
 
+function highlightPrenotazione(id){
+    for (elem of document.getElementsByClassName("p-"+id)){
+        elem.classList.add('occupato-hover');
+    }
+}
+function dehighlightPrenotazione(id){
+    for (elem of document.getElementsByClassName("p-"+id)){
+        elem.classList.remove('occupato-hover');
+    }
+}
+
+
+function modificaPrenotazione(id){
+    const modal = document.getElementById('Modifica_Modal');
+    showModal('Modifica_Modal');
+
+    fetch('/rifugio/prenotazioni/modifica?' + new URLSearchParams({
+        id: id
+    }))
+    .then(response => response.json())
+    .catch(e => {
+        modal.getElementsByClassName('loading-modal')[0].style.display = 'none';
+        modal.getElementsByClassName('error-modal')[0].style.display = 'block';
+        modal.getElementsByClassName('error-modal')[0].getElementsByClassName('error')[0].innerHTML = "<p class='remove-on-close'> Qualcosa e' andato storto! Riprova piu' tardi.</p>";
+        console.log("Request failed to decode!");
+        return;
+    })
+    .then(data => {
+        if(data.errors.length > 0){
+            const errorsBlock = modal.getElementsByClassName('error-modal')[0];
+            var errorText = errorsBlock.getElementsByClassName('error')[0];
+            errorText.innerHTML = "";
+            for (error of data.errors){
+                errorText.innerHTML += "<p class='remove-on-close'>" + error + "</p>";
+            }
+            modal.getElementsByClassName('loading-modal')[0].style.display = 'none';
+            errorsBlock.style.display = 'block';
+        } else {
+            for (field in data.fields){
+                const modalField = document.getElementById('modifica-'+field);
+                if(modalField){
+                    document.getElementById('modifica-'+field).value = data.fields[field];
+                }
+            }
+            modal.getElementsByClassName('loading-modal')[0].style.display = 'none';
+            modal.getElementsByClassName('dati-modal')[0].style.display = 'block';
+        }
+    });
+}
 
 
 
-function prepareNuovaValidation(){
-
+function cercaPrenotazione(){
+    
 }

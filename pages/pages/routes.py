@@ -120,6 +120,14 @@ def prenotazioni_logout():
     logout_user()
     return redirect(url_for('prenotazioni'))
 
+@app.route('/rifugio/prenotazioni/modifica', methods=['GET', 'POST'])
+@login_required
+def prenotazioni_modifica():
+    id_prenotazione = request.args['id']
+    prenotazione = Prenotazione.query.get(id_prenotazione).__dict__
+    prenotazione.pop('_sa_instance_state')
+    return {'errors': [], 'fields': prenotazione}
+
 @app.route('/rifugio/prenotazioni/disponibilita', methods=['GET'])
 @login_required
 def prenotazioni_disponibilita():

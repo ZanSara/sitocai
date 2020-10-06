@@ -1,8 +1,10 @@
+import random
 import datetime
 
 from flask import flash
 from flask_login import login_user
 
+from pages import db
 from pages.models import Utente, Prenotazione
 from pages.forms import LoginForm, ParametriForm, PrenotazioneForm
 
@@ -17,13 +19,15 @@ def valida_date(arrivo, durata):
         errors.append("E' necessario specificare la data di arrivo.")
     if not durata:
         errors.append("E' necessario specificare la durata del soggiorno.")
-    if arrivo < INIZIO_STAGIONE:
-        errors.append(f"La data di arrivo ({arrivo.strftime('%d/%m/%Y')}) "+
-                      f"non puo' precedere la data di inizio stagione ({INIZIO_STAGIONE.strftime('%d/%m/%Y')}).")
-    partenza = arrivo + datetime.timedelta(days=durata)
-    if partenza > FINE_STAGIONE:
-        errors.append(f"La data di partenza ({partenza.strftime('%d/%m/%Y')}) " +
-                      f"non puo' seguire la data di fine stagione ({FINE_STAGIONE.strftime('%d/%m/%Y')}).")
+
+    if arrivo and durata:
+        if arrivo < INIZIO_STAGIONE:
+            errors.append(f"La data di arrivo ({arrivo.strftime('%d/%m/%Y')}) "+
+                        f"non puo' precedere la data di inizio stagione ({INIZIO_STAGIONE.strftime('%d/%m/%Y')}).")
+        partenza = arrivo + datetime.timedelta(days=durata)
+        if partenza > FINE_STAGIONE:
+            errors.append(f"La data di partenza ({partenza.strftime('%d/%m/%Y')}) " +
+                        f"non puo' seguire la data di fine stagione ({FINE_STAGIONE.strftime('%d/%m/%Y')}).")
     return errors
 
 
@@ -42,37 +46,44 @@ def giorno_dell_anno():
 
 
 def calendario():
+    #Prenotazione.query.delete()
+    for p in Prenotazione.query.all():
+        print(p)
+
     oggi = datetime.date.today()
     giorno_dell_anno = (oggi - datetime.date(oggi.year, 1, 1)).days
     giorni_gestione = [INIZIO_STAGIONE + datetime.timedelta(days=x) 
                         for x in range((FINE_STAGIONE-INIZIO_STAGIONE).days)]
     return {
         giorno : {
-            "gestore" : None,  #get_gestore(giorno),
-            "prenotazioni" : [], #get_prenotazioni(giorno),
+            "gestore" : Prenotazione.query.filter_by(gestione=True).filter(Prenotazione.arrivo < giorno).filter(Prenotazione.partenza > giorno).first(),
+            "prenotazioni" : Prenotazione.query.filter_by(gestione=False).filter(Prenotazione.arrivo <= giorno).filter(Prenotazione.partenza > giorno).all(),
         }
     for giorno in giorni_gestione}
 
 
 def crea_prenotazione(request):
     form = PrenotazioneForm(request.form)
+    form.partenza.data = form.arrivo.data + datetime.timedelta(days=form.durata.data)  # NECESSARY
+    form.colore.data = random.choice(['#FFFFFF', "#FF0000", "#00FF00", "#00FFFF", "#FFFF00", '#CCCCCC'])
     response = {'errors': []}
 
     # Validazione
     if not form.validate_on_submit():
         response['errors'].append("I dati di prenotazione non sono validi.")
-
     for error in valida_date(form.arrivo.data, form.durata.data):
         response['errors'].append(error)
-
     if not form.gestione and not form.posti:
         response['errors'].append(f"E' necessario specificare il numero di posti letto prenotati.")
-
-    
     if len(response['errors']) > 0:
         return response
 
-    return {'errors': [], 'id': 1}
+    data = {key: value for key, value in form.data.items() if key != "csrf_token"}
+    prenotazione = Prenotazione(**data)
+    db.session.add(prenotazione)
+    db.session.commit()
+
+    return {'errors': [], 'id': prenotazione.id}
 
 
 def disponibilita(arrivo, durata):

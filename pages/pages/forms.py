@@ -20,8 +20,10 @@ class PrenotazioneForm(FlaskForm):
     provincia = StringField('Provincia', validators=[DataRequired()])
     arrivo = DateField('Inizio', format='%Y-%m-%d', validators=[DataRequired()])
     durata = IntegerField('Durata', validators=[DataRequired()])
+    partenza = DateField('Partenza', validators=[DataRequired()])
     posti = IntegerField('Posti')  # Non necessario se e' una gestione
     responsabile = StringField('Responsabile', validators=[DataRequired()])
     note = StringField('Note')
     gestione = BooleanField('Gestione')
     cane = BooleanField('Cane')
+    colore = StringField('Colore')

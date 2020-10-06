@@ -2,6 +2,7 @@ import datetime
 
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
+from sqlalchemy.ext.hybrid import hybrid_property
 
 from pages import db
 from pages import login
@@ -26,24 +27,25 @@ class Utente(UserMixin, db.Model):
 
 
 class Prenotazione(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    nome = db.Column(db.String(500), index=True)
-    telefono = db.Column(db.String(120), index=True)
-    provincia = db.Column(db.String(2))
-    arrivo = db.Column(db.DateTime, nullable=False, 
-                default=datetime.date(datetime.date.today().year, 6, 1))
-    durata = db.Column(db.Integer, nullable=False, default=1)
-    posti = db.Column(db.Integer, nullable=False, default=1)
-    responsabile = db.Column(db.String(120), nullable=False, default="Errore!")
+    id = db.Column(db.Integer, primary_key=True, nullable=False)
+    nome = db.Column(db.String(500), index=True, nullable=False)
+    telefono = db.Column(db.String(120), index=True, nullable=False)
+    provincia = db.Column(db.String(30), nullable=True)
+    arrivo = db.Column(db.DateTime, nullable=False)
+    durata = db.Column(db.Integer, nullable=False)
+    partenza = db.Column(db.DateTime, nullable=False)
+    posti = db.Column(db.Integer, nullable=True)
+    responsabile = db.Column(db.String(120), nullable=False)
     note = db.Column(db.String(1000), nullable=True)
-    is_gestione = db.Column(db.Boolean, nullable=False, default=False)
-    cane = db.Column(db.Boolean, nullable=False, default=False)
+    gestione = db.Column(db.Boolean, nullable=False)
+    cane = db.Column(db.Boolean, nullable=False)
+    colore = db.Column(db.String(7), nullable=False)
 
     def __repr__(self):
-        return '<Prenotazione {}{} - {}, {} giorni, {} persone>'.format(
+        return '<Prenotazione {}{} - {}, {} giorni{}>'.format(
                                     self.nome, 
                                     " (gestore)" if self.gestione else "",
                                     self.arrivo,
                                     self.durata,
-                                    self.posti
+                                    f", {self.posti} persone" if not self.gestione else ""
                                 )    
